@@ -1,0 +1,71 @@
+# SurgWound Assist v8 — Experiment 2 (Multi-Scale Global + Local Crop Fusion)
+
+version: "v8.2"
+description: "BiomedCLIP Multi-Scale Feature Fusion + Semantic Text Prototypes + Logit Adjustment + 7x TTA"
+
+data:
+  dataset_csv: "archive/dataset_backup_v7/annotations.csv"
+  image_dir: "data/images"
+  num_samples: 349
+  legacy_mode: true
+  multiscale:
+    enabled: true
+    global_size: [224, 224]
+    local_crop_scale: 0.65
+    local_size: [224, 224]
+
+backbone:
+  model_id: "hf-hub:microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224"
+  architecture: "ViT-B/16"
+  pretrained_weights: "PubMed Central 15M"
+  output_dim: 512
+  freeze_backbone: false
+
+multiscale_fusion:
+  enabled: true
+  fusion_type: "Concatenation + Projection"
+  projection: "Linear(1024 -> 512) -> LayerNorm(512) -> GELU -> Dropout(0.25)"
+
+text_prototypes:
+  enabled: true
+  source: "BiomedCLIP PubMedBERT text encoder"
+  file: "v8/src/clinical_text_prototypes.pt"
+  embedding_dim: 512
+
+classifier:
+  head_type: "Residual Text-Informed Adapter"
+  adapter: "Linear(512, 256) -> GELU -> Dropout(0.25) -> Linear(256, 512)"
+  classifier: "Linear(512, num_classes) initialized with normalized text prototypes"
+
+optimizer:
+  type: "AdamW"
+  base_lr: 3.0e-5
+  weight_decay: 1.0e-3
+  llrd:
+    enabled: true
+    decay_rate: 0.85
+
+scheduler:
+  type: "cosine_with_linear_warmup"
+  warmup_ratio: 0.1
+  min_lr: 1.0e-7
+
+training:
+  epochs: 80
+  batch_size: 16
+  accum_steps: 2 # Effective batch = 32
+  early_stopping_patience: 20
+  amp: true
+
+loss:
+  strategy: "logit_adjusted"
+  tau: 1.0
+
+inference:
+  tta:
+    enabled: true
+    num_passes: 7
+  decision_boundary:
+    type: "validation_tuned"
+    min_improvement: 0.02
+    grid: [0.7, 0.85, 1.0, 1.2, 1.4, 1.7, 2.0]

@@ -1,0 +1,26 @@
+{
+    "experiment_id": "v8_e6_mixup_smoothing_s7",
+    "started_at": "2026-09-05T10:55:44.413970",
+    "hypothesis": "MixUp(alpha=0.2) + Label Smoothing(0.1) + Adaptive-Tau LA + Balanced Sampler + Seed 7 + Effective Batch 64 for minority class recovery",
+    "config": {
+        "loss_strategy": "logit_adjusted",
+        "epochs": 80,
+        "lr": 5e-05,
+        "batch_size": 16,
+        "accum_steps": 4,
+        "effective_batch": 64,
+        "seed": 7,
+        "multiscale": true,
+        "use_text_prototypes": true,
+        "legacy_mode": true,
+        "dataset_csv": "data/annotations.csv",
+        "tau": 1.0,
+        "dropout": 0.3,
+        "use_sampler": true,
+        "crop_scale": 0.5,
+        "patience": 25,
+        "adaptive_tau": true,
+        "label_smoothing": 0.1,
+        "use_mixup": true
+    }
+}

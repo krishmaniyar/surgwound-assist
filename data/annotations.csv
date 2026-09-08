@@ -1,0 +1,687 @@
+image_name,location,healing_status,closure_method,exudate_type,erythema,edema,infection_risk,urgency_level,split
+606.jpg,Abdomen,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+76.jpg,Ankle,Not Healed,Sutures,Non-existent,Existent,Existent,Low,Home Care (Green),train
+403.jpg,Other,Not Healed,Sutures,Sanguineous,Non-existent,Non-existent,Low,Home Care (Green),train
+286.jpg,Patella,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+678.jpg,Other,Not Healed,Uncertain,Non-existent,Non-existent,Uncertain,Low,Home Care (Green),train
+561.jpg,Abdomen,Not Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+792.jpg,Manus,Not Healed,Sutures,Non-existent,Non-existent,Existent,Low,Home Care (Green),train
+930.jpg,Other,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+799.jpg,Facial region,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+32.jpg,Uncertain,Healed,Sutures,Non-existent,Non-existent,Uncertain,Low,Home Care (Green),train
+548.jpg,Uncertain,Healed,Sutures,Seropurulent,Non-existent,Non-existent,Medium,Home Care (Green),train
+308.jpg,Facial region,Healed,Uncertain,Purulent,Non-existent,Non-existent,Medium,Home Care (Green),train
+497.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+200.jpg,Uncertain,Not Healed,Sutures,Serous,Non-existent,Uncertain,Low,Home Care (Green),train
+839.jpg,Ankle,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+217.jpg,Uncertain,Not Healed,Sutures,Non-existent,Uncertain,Uncertain,Low,Home Care (Green),train
+303.jpg,Abdomen,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+542.jpg,Uncertain,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+779.jpg,Uncertain,Not Healed,Uncertain,Uncertain,Non-existent,Uncertain,Low,Home Care (Green),train
+121.jpg,Cervical region,Not Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+279.jpg,Uncertain,Not Healed,Uncertain,Serous,Existent,Uncertain,Low,Home Care (Green),train
+58.jpg,Facial region,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+538.jpg,Uncertain,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+202.jpg,Ankle,Not Healed,Sutures,Uncertain,Uncertain,Uncertain,Low,Home Care (Green),train
+361.jpg,Other,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+241.jpg,Manus,Healed,Uncertain,Non-existent,Existent,Non-existent,Low,Home Care (Green),train
+401.jpg,Uncertain,Not Healed,Sutures,Non-existent,Existent,Uncertain,Low,Home Care (Green),train
+400.jpg,Other,Not Healed,Adhesives,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+466.jpg,Uncertain,Not Healed,Uncertain,Uncertain,Existent,Existent,Medium,"Clinic Visit (Yellow, <48h)",train
+841.jpg,Patella,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+221.jpg,Ankle,Not Healed,Sutures,Non-existent,Non-existent,Existent,Low,Home Care (Green),train
+223.jpg,Uncertain,Healed,Uncertain,Uncertain,Non-existent,Non-existent,Low,Home Care (Green),train
+920.jpg,Other,Not Healed,Sutures,Non-existent,Existent,Non-existent,Medium,"Clinic Visit (Yellow, <48h)",train
+345.jpg,Facial region,Not Healed,Uncertain,Non-existent,Existent,Uncertain,Low,Home Care (Green),train
+18.jpg,Abdomen,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+305.jpg,Other,Not Healed,Sutures,Sanguineous,Non-existent,Existent,Medium,Home Care (Green),train
+109.jpg,Cervical region,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+498.jpg,Uncertain,Healed,Sutures,Non-existent,Existent,Non-existent,Low,Home Care (Green),train
+744.jpg,Abdomen,Healed,Uncertain,Non-existent,Non-existent,Uncertain,Low,Home Care (Green),train
+62.jpg,Ankle,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+197.jpg,Uncertain,Not Healed,Uncertain,Serous,Existent,Existent,Medium,"Clinic Visit (Yellow, <48h)",train
+313.jpg,Uncertain,Healed,Sutures,Non-existent,Existent,Non-existent,Low,Home Care (Green),train
+669.jpg,Abdomen,Not Healed,Uncertain,Purulent,Non-existent,Non-existent,High,"Emergency Care (Red, immediate)",train
+990.jpg,Other,Not Healed,Sutures,Uncertain,Existent,Uncertain,Low,Home Care (Green),train
+749.jpg,Uncertain,Healed,Invisible,Non-existent,Non-existent,Uncertain,Low,Home Care (Green),train
+428.jpg,Other,Not Healed,Sutures,Sanguineous,Non-existent,Uncertain,Low,Home Care (Green),train
+624.jpg,Other,Not Healed,Sutures,Non-existent,Existent,Uncertain,Low,Home Care (Green),train
+687.jpg,Uncertain,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+963.jpg,Other,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+637.jpg,Abdomen,Not Healed,Uncertain,Sanguineous,Non-existent,Non-existent,Medium,"Clinic Visit (Yellow, <48h)",train
+677.jpg,Uncertain,Not Healed,Uncertain,Non-existent,Non-existent,Uncertain,Low,Home Care (Green),train
+74.jpg,Facial region,Healed,Invisible,Non-existent,Existent,Non-existent,Low,Home Care (Green),train
+752.jpg,Facial region,Not Healed,Sutures,Non-existent,Non-existent,Uncertain,Low,Home Care (Green),train
+660.jpg,Uncertain,Healed,Uncertain,Uncertain,Uncertain,Uncertain,Low,Home Care (Green),train
+352.jpg,Facial region,Not Healed,Sutures,Sanguineous,Non-existent,Existent,Medium,Home Care (Green),train
+591.jpg,Ankle,Not Healed,Sutures,Uncertain,Existent,Existent,Medium,"Clinic Visit (Yellow, <48h)",train
+843.jpg,Ankle,Not Healed,Uncertain,Non-existent,Non-existent,Non-existent,Medium,Home Care (Green),train
+151.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+98.jpg,Patella,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+525.jpg,Abdomen,Not Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+152.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Existent,Low,Home Care (Green),train
+72.jpg,Patella,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+290.jpg,Other,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+853.jpg,Uncertain,Not Healed,Invisible,Non-existent,Non-existent,Uncertain,Low,Home Care (Green),train
+580.jpg,Other,Not Healed,Sutures,Non-existent,Non-existent,Uncertain,Low,Home Care (Green),train
+820.jpg,Other,Not Healed,Sutures,Non-existent,Non-existent,Uncertain,Low,Home Care (Green),train
+609.jpg,Uncertain,Not Healed,Uncertain,Serous,Existent,Existent,Medium,"Clinic Visit (Yellow, <48h)",train
+161.jpg,Facial region,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+444.jpg,Facial region,Not Healed,Sutures,Non-existent,Uncertain,Non-existent,Low,Home Care (Green),train
+17.jpg,Ankle,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+600.jpg,Uncertain,Not Healed,Sutures,Uncertain,Existent,Uncertain,Medium,"Clinic Visit (Yellow, <48h)",train
+309.jpg,Uncertain,Not Healed,Sutures,Non-existent,Non-existent,Uncertain,Low,Home Care (Green),train
+579.jpg,Uncertain,Not Healed,Uncertain,Uncertain,Existent,Non-existent,Low,Home Care (Green),train
+165.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+968.jpg,Other,Not Healed,Uncertain,Purulent,Existent,Non-existent,High,"Emergency Care (Red, immediate)",train
+641.jpg,Cervical region,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+785.jpg,Facial region,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+69.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+607.jpg,Uncertain,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+158.jpg,Ankle,Not Healed,Invisible,Seropurulent,Existent,Existent,High,"Emergency Care (Red, immediate)",train
+473.jpg,Abdomen,Not Healed,Uncertain,Non-existent,Existent,Uncertain,Low,Home Care (Green),train
+86.jpg,Other,Not Healed,Sutures,Non-existent,Non-existent,Existent,Low,Home Care (Green),train
+868.jpg,Manus,Not Healed,Sutures,Sanguineous,Non-existent,Existent,Medium,Home Care (Green),train
+129.jpg,Manus,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+475.jpg,Other,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+269.jpg,Abdomen,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+170.jpg,Uncertain,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+778.jpg,Abdomen,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+167.jpg,Uncertain,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+878.jpg,Ankle,Healed,Invisible,Uncertain,Uncertain,Uncertain,Low,Home Care (Green),train
+259.jpg,Uncertain,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+453.jpg,Uncertain,Healed,Sutures,Non-existent,Existent,Non-existent,Low,Home Care (Green),train
+45.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+829.jpg,Uncertain,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+366.jpg,Other,Not Healed,Sutures,Non-existent,Existent,Uncertain,Low,Home Care (Green),train
+566.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+737.jpg,Uncertain,Not Healed,Uncertain,Serous,Existent,Uncertain,Low,Home Care (Green),train
+1007.jpg,Uncertain,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+145.jpg,Abdomen,Not Healed,Invisible,Seropurulent,Non-existent,Non-existent,Medium,"Clinic Visit (Yellow, <48h)",train
+999.jpg,Other,Not Healed,Sutures,Non-existent,Existent,Non-existent,Medium,"Clinic Visit (Yellow, <48h)",train
+642.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+208.jpg,Uncertain,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+8.jpg,Ankle,Healed,Staples,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+1008.jpg,Other,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+233.jpg,Facial region,Not Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+398.jpg,Uncertain,Not Healed,Uncertain,Non-existent,Existent,Uncertain,Low,Home Care (Green),train
+735.jpg,Abdomen,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+817.jpg,Abdomen,Healed,Invisible,Non-existent,Existent,Uncertain,Low,Home Care (Green),train
+336.jpg,Other,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+611.jpg,Uncertain,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+827.jpg,Cervical region,Healed,Invisible,Non-existent,Non-existent,Uncertain,Low,Home Care (Green),train
+652.jpg,Uncertain,Not Healed,Sutures,Non-existent,Existent,Non-existent,Low,Home Care (Green),train
+56.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+317.jpg,Uncertain,Not Healed,Sutures,Serous,Existent,Existent,Low,Home Care (Green),train
+294.jpg,Cervical region,Healed,Invisible,Sanguineous,Non-existent,Non-existent,Low,Home Care (Green),train
+896.jpg,Manus,Not Healed,Sutures,Sanguineous,Existent,Existent,Medium,"Clinic Visit (Yellow, <48h)",train
+238.jpg,Abdomen,Healed,Uncertain,Non-existent,Existent,Uncertain,Low,Home Care (Green),train
+534.jpg,Uncertain,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+264.jpg,Uncertain,Healed,Sutures,Non-existent,Existent,Uncertain,Low,Home Care (Green),train
+987.jpg,Other,Healed,Uncertain,Non-existent,Existent,Non-existent,Low,Home Care (Green),train
+776.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+814.jpg,Manus,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+154.jpg,Manus,Healed,Sutures,Non-existent,Existent,Existent,Low,Home Care (Green),train
+423.jpg,Other,Not Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+195.jpg,Uncertain,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+904.jpg,Abdomen,Not Healed,Adhesives,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+828.jpg,Other,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+455.jpg,Facial region,Not Healed,Uncertain,Serous,Existent,Uncertain,Low,Home Care (Green),train
+80.jpg,Patella,Healed,Invisible,Non-existent,Existent,Non-existent,Low,Home Care (Green),train
+918.jpg,Other,Not Healed,Staples,Non-existent,Existent,Non-existent,High,"Clinic Visit (Yellow, <48h)",train
+879.jpg,Ankle,Not Healed,Sutures,Non-existent,Existent,Existent,Low,Home Care (Green),train
+108.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+91.jpg,Abdomen,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+898.jpg,Uncertain,Healed,Invisible,Non-existent,Non-existent,Uncertain,Low,Home Care (Green),train
+275.jpg,Facial region,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+489.jpg,Other,Healed,Adhesives,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+978.jpg,Uncertain,Not Healed,Staples,Uncertain,Existent,Uncertain,High,"Clinic Visit (Yellow, <48h)",train
+169.jpg,Uncertain,Not Healed,Uncertain,Serous,Uncertain,Uncertain,Low,Home Care (Green),train
+10.jpg,Abdomen,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+59.jpg,Ankle,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+292.jpg,Uncertain,Not Healed,Uncertain,Sanguineous,Non-existent,Non-existent,Low,Home Care (Green),train
+643.jpg,Uncertain,Not Healed,Uncertain,Serous,Uncertain,Uncertain,Low,Home Care (Green),train
+1009.jpg,Abdomen,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+950.jpg,Other,Not Healed,Sutures,Uncertain,Existent,Existent,Medium,"Clinic Visit (Yellow, <48h)",train
+120.jpg,Abdomen,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+175.jpg,Facial region,Healed,Sutures,Non-existent,Non-existent,Uncertain,Low,Home Care (Green),train
+29.jpg,Other,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+316.jpg,Other,Healed,Sutures,Non-existent,Existent,Non-existent,Low,Home Care (Green),train
+889.jpg,Other,Not Healed,Sutures,Sanguineous,Existent,Existent,Medium,"Clinic Visit (Yellow, <48h)",train
+862.jpg,Uncertain,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+682.jpg,Ankle,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+92.jpg,Other,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+318.jpg,Patella,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+456.jpg,Abdomen,Not Healed,Uncertain,Non-existent,Existent,Uncertain,Low,Home Care (Green),train
+670.jpg,Uncertain,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+646.jpg,Facial region,Not Healed,Sutures,Sanguineous,Non-existent,Non-existent,Medium,Home Care (Green),train
+911.jpg,Ankle,Not Healed,Sutures,Non-existent,Existent,Uncertain,Low,Home Care (Green),train
+147.jpg,Other,Healed,Sutures,Non-existent,Existent,Existent,Low,Home Care (Green),train
+226.jpg,Patella,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+529.jpg,Uncertain,Not Healed,Uncertain,Serous,Existent,Uncertain,Low,Home Care (Green),train
+680.jpg,Other,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+502.jpg,Ankle,Healed,Adhesives,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+848.jpg,Ankle,Healed,Uncertain,Non-existent,Non-existent,Uncertain,Low,Home Care (Green),train
+618.jpg,Uncertain,Not Healed,Invisible,Sanguineous,Non-existent,Non-existent,Medium,Home Care (Green),train
+995.jpg,Other,Not Healed,Sutures,Non-existent,Existent,Non-existent,Medium,Home Care (Green),train
+713.jpg,Patella,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+571.jpg,Manus,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+176.jpg,Ankle,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+78.jpg,Ankle,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+617.jpg,Uncertain,Healed,Sutures,Non-existent,Existent,Non-existent,Low,Home Care (Green),train
+295.jpg,Uncertain,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+850.jpg,Other,Healed,Adhesives,Non-existent,Non-existent,Uncertain,Low,Home Care (Green),train
+630.jpg,Other,Not Healed,Sutures,Non-existent,Existent,Existent,Medium,Home Care (Green),train
+559.jpg,Facial region,Not Healed,Uncertain,Non-existent,Existent,Non-existent,Low,Home Care (Green),train
+998.jpg,Other,Not Healed,Uncertain,Uncertain,Uncertain,Uncertain,Low,Home Care (Green),train
+359.jpg,Abdomen,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+509.jpg,Uncertain,Not Healed,Uncertain,Purulent,Non-existent,Non-existent,Medium,"Clinic Visit (Yellow, <48h)",train
+288.jpg,Uncertain,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+838.jpg,Facial region,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+812.jpg,Abdomen,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+247.jpg,Other,Not Healed,Uncertain,Sanguineous,Existent,Uncertain,Medium,"Clinic Visit (Yellow, <48h)",train
+989.jpg,Abdomen,Not Healed,Sutures,Uncertain,Uncertain,Uncertain,Low,Home Care (Green),train
+704.jpg,Patella,Not Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+48.jpg,Abdomen,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+416.jpg,Uncertain,Not Healed,Uncertain,Purulent,Existent,Uncertain,High,"Emergency Care (Red, immediate)",train
+14.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+199.jpg,Uncertain,Not Healed,Uncertain,Uncertain,Existent,Uncertain,Low,Home Care (Green),train
+126.jpg,Abdomen,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+936.jpg,Ankle,Not Healed,Uncertain,Sanguineous,Non-existent,Non-existent,Medium,"Clinic Visit (Yellow, <48h)",train
+469.jpg,Uncertain,Healed,Invisible,Uncertain,Non-existent,Uncertain,Low,Home Care (Green),train
+519.jpg,Ankle,Healed,Uncertain,Non-existent,Non-existent,Existent,Low,Home Care (Green),train
+887.jpg,Other,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+720.jpg,Manus,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+739.jpg,Facial region,Not Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+926.jpg,Other,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+892.jpg,Abdomen,Not Healed,Adhesives,Non-existent,Non-existent,Uncertain,Low,Home Care (Green),train
+640.jpg,Abdomen,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+347.jpg,Other,Not Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+610.jpg,Other,Healed,Sutures,Uncertain,Existent,Uncertain,Low,Home Care (Green),train
+159.jpg,Ankle,Not Healed,Adhesives,Purulent,Non-existent,Non-existent,Medium,Home Care (Green),train
+57.jpg,Cervical region,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+323.jpg,Uncertain,Healed,Adhesives,Non-existent,Existent,Existent,Low,Home Care (Green),train
+510.jpg,Manus,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+410.jpg,Uncertain,Not Healed,Uncertain,Serous,Existent,Uncertain,Low,Home Care (Green),train
+902.jpg,Patella,Not Healed,Sutures,Sanguineous,Non-existent,Non-existent,Medium,"Clinic Visit (Yellow, <48h)",train
+846.jpg,Ankle,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+584.jpg,Patella,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+773.jpg,Facial region,Not Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+622.jpg,Ankle,Not Healed,Sutures,Non-existent,Existent,Non-existent,Low,Home Care (Green),train
+460.jpg,Cervical region,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+357.jpg,Manus,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+160.jpg,Abdomen,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+184.jpg,Uncertain,Not Healed,Sutures,Non-existent,Existent,Uncertain,Low,Home Care (Green),train
+639.jpg,Uncertain,Not Healed,Uncertain,Uncertain,Non-existent,Uncertain,Low,Home Care (Green),train
+389.jpg,Patella,Healed,Sutures,Non-existent,Existent,Uncertain,Low,Home Care (Green),train
+689.jpg,Facial region,Not Healed,Uncertain,Uncertain,Existent,Non-existent,Low,Home Care (Green),train
+5.jpg,Abdomen,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+211.jpg,Facial region,Not Healed,Sutures,Non-existent,Non-existent,Uncertain,Low,Home Care (Green),train
+796.jpg,Abdomen,Not Healed,Sutures,Non-existent,Non-existent,Uncertain,Low,Home Care (Green),train
+85.jpg,Patella,Healed,Sutures,Non-existent,Non-existent,Existent,Low,Home Care (Green),train
+360.jpg,Uncertain,Not Healed,Uncertain,Seropurulent,Existent,Existent,High,"Emergency Care (Red, immediate)",train
+556.jpg,Other,Not Healed,Sutures,Sanguineous,Existent,Uncertain,Medium,"Clinic Visit (Yellow, <48h)",train
+955.jpg,Other,Not Healed,Uncertain,Non-existent,Non-existent,Non-existent,High,"Emergency Care (Red, immediate)",train
+325.jpg,Other,Healed,Sutures,Non-existent,Existent,Non-existent,Medium,"Clinic Visit (Yellow, <48h)",train
+186.jpg,Patella,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+278.jpg,Manus,Not Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+931.jpg,Ankle,Not Healed,Staples,Non-existent,Existent,Existent,Medium,"Clinic Visit (Yellow, <48h)",train
+794.jpg,Cervical region,Healed,Invisible,Non-existent,Existent,Non-existent,Low,Home Care (Green),train
+650.jpg,Facial region,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+574.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+863.jpg,Uncertain,Not Healed,Adhesives,Non-existent,Non-existent,Uncertain,Low,Home Care (Green),train
+399.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+913.jpg,Other,Not Healed,Sutures,Non-existent,Existent,Uncertain,Low,Home Care (Green),train
+658.jpg,Abdomen,Not Healed,Invisible,Non-existent,Non-existent,Existent,Medium,"Clinic Visit (Yellow, <48h)",train
+940.jpg,Patella,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+131.jpg,Cervical region,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+959.jpg,Other,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+258.jpg,Cervical region,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+784.jpg,Facial region,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+122.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+531.jpg,Patella,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+266.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+595.jpg,Abdomen,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+1000.jpg,Uncertain,Not Healed,Sutures,Non-existent,Existent,Non-existent,Low,Home Care (Green),train
+605.jpg,Other,Not Healed,Sutures,Non-existent,Existent,Non-existent,Low,Home Care (Green),train
+802.jpg,Other,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+554.jpg,Other,Not Healed,Uncertain,Sanguineous,Existent,Non-existent,Low,Home Care (Green),train
+24.jpg,Ankle,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+172.jpg,Abdomen,Not Healed,Sutures,Non-existent,Existent,Uncertain,Low,Home Care (Green),train
+374.jpg,Abdomen,Not Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+191.jpg,Ankle,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+434.jpg,Uncertain,Not Healed,Uncertain,Uncertain,Existent,Uncertain,Low,Home Care (Green),train
+711.jpg,Ankle,Healed,Uncertain,Non-existent,Non-existent,Uncertain,Low,Home Care (Green),train
+895.jpg,Uncertain,Not Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+1001.jpg,Manus,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+654.jpg,Abdomen,Not Healed,Uncertain,Non-existent,Existent,Uncertain,Low,Home Care (Green),train
+921.jpg,Ankle,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+227.jpg,Patella,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+488.jpg,Manus,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+536.jpg,Abdomen,Not Healed,Uncertain,Uncertain,Uncertain,Uncertain,Low,Home Care (Green),train
+171.jpg,Uncertain,Not Healed,Uncertain,Serous,Existent,Uncertain,Medium,Home Care (Green),train
+164.jpg,Abdomen,Not Healed,Sutures,Seropurulent,Non-existent,Non-existent,Medium,"Clinic Visit (Yellow, <48h)",train
+210.jpg,Uncertain,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+274.jpg,Uncertain,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+953.jpg,Uncertain,Not Healed,Sutures,Uncertain,Existent,Existent,Medium,"Clinic Visit (Yellow, <48h)",train
+929.jpg,Other,Not Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+43.jpg,Other,Not Healed,Sutures,Non-existent,Existent,Existent,Low,Home Care (Green),train
+356.jpg,Facial region,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+867.jpg,Other,Not Healed,Sutures,Non-existent,Non-existent,Non-existent,Medium,Home Care (Green),train
+55.jpg,Facial region,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+462.jpg,Uncertain,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+144.jpg,Facial region,Not Healed,Sutures,Seropurulent,Existent,Existent,High,"Emergency Care (Red, immediate)",train
+958.jpg,Abdomen,Not Healed,Uncertain,Uncertain,Existent,Uncertain,Low,Home Care (Green),train
+60.jpg,Abdomen,Healed,Invisible,Serous,Non-existent,Non-existent,Low,Home Care (Green),train
+962.jpg,Uncertain,Not Healed,Uncertain,Serous,Existent,Non-existent,Medium,Home Care (Green),train
+966.jpg,Other,Not Healed,Invisible,Non-existent,Existent,Uncertain,Low,Home Care (Green),train
+685.jpg,Uncertain,Not Healed,Uncertain,Serous,Existent,Uncertain,Low,Home Care (Green),train
+11.jpg,Patella,Healed,Sutures,Non-existent,Existent,Non-existent,Low,Home Care (Green),train
+888.jpg,Other,Healed,Uncertain,Non-existent,Existent,Non-existent,Low,Home Care (Green),train
+730.jpg,Uncertain,Not Healed,Sutures,Non-existent,Non-existent,Existent,Low,Home Care (Green),train
+492.jpg,Abdomen,Not Healed,Sutures,Non-existent,Existent,Uncertain,Low,Home Care (Green),train
+38.jpg,Abdomen,Not Healed,Sutures,Non-existent,Non-existent,Non-existent,Medium,"Clinic Visit (Yellow, <48h)",train
+849.jpg,Cervical region,Healed,Invisible,Non-existent,Existent,Uncertain,Low,Home Care (Green),train
+598.jpg,Other,Not Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+504.jpg,Abdomen,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+215.jpg,Abdomen,Not Healed,Sutures,Purulent,Non-existent,Non-existent,Medium,"Clinic Visit (Yellow, <48h)",train
+587.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+102.jpg,Abdomen,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+547.jpg,Ankle,Healed,Uncertain,Non-existent,Non-existent,Existent,Low,Home Care (Green),train
+138.jpg,Other,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+858.jpg,Uncertain,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+919.jpg,Other,Not Healed,Sutures,Non-existent,Existent,Existent,Low,Home Care (Green),train
+969.jpg,Other,Not Healed,Sutures,Serous,Existent,Existent,Medium,"Clinic Visit (Yellow, <48h)",train
+774.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+922.jpg,Other,Not Healed,Staples,Non-existent,Non-existent,Uncertain,Low,Home Care (Green),train
+648.jpg,Facial region,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+764.jpg,Uncertain,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+136.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+116.jpg,Other,Not Healed,Sutures,Non-existent,Existent,Existent,Medium,"Clinic Visit (Yellow, <48h)",train
+192.jpg,Uncertain,Not Healed,Uncertain,Non-existent,Existent,Uncertain,Low,Home Care (Green),train
+581.jpg,Uncertain,Not Healed,Uncertain,Sanguineous,Existent,Non-existent,Medium,"Clinic Visit (Yellow, <48h)",train
+429.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+310.jpg,Facial region,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+260.jpg,Other,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+296.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+900.jpg,Other,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+407.jpg,Other,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+540.jpg,Other,Healed,Sutures,Non-existent,Existent,Non-existent,Low,Home Care (Green),train
+656.jpg,Uncertain,Not Healed,Uncertain,Sanguineous,Uncertain,Uncertain,High,"Clinic Visit (Yellow, <48h)",train
+482.jpg,Manus,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+551.jpg,Uncertain,Not Healed,Uncertain,Uncertain,Uncertain,Uncertain,Low,Home Care (Green),train
+137.jpg,Ankle,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+106.jpg,Patella,Healed,Sutures,Non-existent,Existent,Non-existent,Low,Home Care (Green),train
+825.jpg,Manus,Not Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+692.jpg,Facial region,Not Healed,Sutures,Non-existent,Existent,Non-existent,Low,Home Care (Green),train
+629.jpg,Manus,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+338.jpg,Manus,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+130.jpg,Facial region,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+36.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+608.jpg,Other,Not Healed,Sutures,Non-existent,Existent,Non-existent,Low,Home Care (Green),train
+874.jpg,Uncertain,Not Healed,Invisible,Uncertain,Existent,Uncertain,Low,Home Care (Green),train
+123.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Existent,Low,Home Care (Green),train
+506.jpg,Other,Healed,Sutures,Non-existent,Existent,Non-existent,Low,Home Care (Green),train
+628.jpg,Uncertain,Healed,Uncertain,Uncertain,Non-existent,Uncertain,Low,Home Care (Green),train
+277.jpg,Abdomen,Healed,Uncertain,Uncertain,Uncertain,Uncertain,Low,Home Care (Green),train
+993.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+322.jpg,Abdomen,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+793.jpg,Uncertain,Not Healed,Uncertain,Non-existent,Existent,Uncertain,Low,Home Care (Green),train
+35.jpg,Ankle,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+6.jpg,Other,Not Healed,Sutures,Non-existent,Non-existent,Existent,Medium,Home Care (Green),train
+485.jpg,Uncertain,Healed,Sutures,Non-existent,Existent,Uncertain,Low,Home Care (Green),train
+758.jpg,Facial region,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+733.jpg,Patella,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+255.jpg,Facial region,Not Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+448.jpg,Abdomen,Healed,Uncertain,Uncertain,Uncertain,Uncertain,Low,Home Care (Green),train
+631.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+97.jpg,Abdomen,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+688.jpg,Cervical region,Healed,Uncertain,Uncertain,Non-existent,Non-existent,Low,Home Care (Green),train
+128.jpg,Abdomen,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+53.jpg,Abdomen,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+293.jpg,Facial region,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+852.jpg,Patella,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+433.jpg,Abdomen,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+569.jpg,Facial region,Not Healed,Uncertain,Non-existent,Existent,Uncertain,Low,Home Care (Green),train
+703.jpg,Uncertain,Not Healed,Uncertain,Uncertain,Uncertain,Uncertain,Low,Home Care (Green),train
+1002.jpg,Other,Not Healed,Staples,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+487.jpg,Other,Healed,Uncertain,Non-existent,Existent,Non-existent,Low,Home Care (Green),train
+594.jpg,Uncertain,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+541.jpg,Abdomen,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+150.jpg,Abdomen,Not Healed,Adhesives,Purulent,Non-existent,Non-existent,Medium,"Clinic Visit (Yellow, <48h)",train
+763.jpg,Ankle,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+230.jpg,Patella,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+245.jpg,Facial region,Not Healed,Sutures,Non-existent,Existent,Non-existent,Low,Home Care (Green),train
+166.jpg,Uncertain,Not Healed,Sutures,Non-existent,Existent,Non-existent,Low,Home Care (Green),train
+133.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+684.jpg,Patella,Not Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+250.jpg,Cervical region,Healed,Adhesives,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+563.jpg,Uncertain,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+808.jpg,Uncertain,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+355.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+681.jpg,Uncertain,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+967.jpg,Other,Not Healed,Uncertain,Non-existent,Existent,Non-existent,High,"Emergency Care (Red, immediate)",train
+924.jpg,Other,Not Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+427.jpg,Uncertain,Not Healed,Sutures,Non-existent,Non-existent,Uncertain,Low,Home Care (Green),train
+406.jpg,Uncertain,Not Healed,Uncertain,Serous,Non-existent,Uncertain,Medium,"Clinic Visit (Yellow, <48h)",train
+770.jpg,Abdomen,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+515.jpg,Abdomen,Not Healed,Uncertain,Purulent,Existent,Non-existent,High,"Emergency Care (Red, immediate)",train
+740.jpg,Abdomen,Not Healed,Sutures,Purulent,Non-existent,Non-existent,Medium,"Clinic Visit (Yellow, <48h)",train
+464.jpg,Uncertain,Not Healed,Sutures,Non-existent,Existent,Non-existent,Low,Home Care (Green),train
+783.jpg,Patella,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+668.jpg,Manus,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+795.jpg,Facial region,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+882.jpg,Ankle,Not Healed,Sutures,Non-existent,Existent,Uncertain,Low,Home Care (Green),train
+89.jpg,Patella,Healed,Sutures,Non-existent,Non-existent,Existent,Low,Home Care (Green),train
+285.jpg,Patella,Not Healed,Sutures,Serous,Existent,Non-existent,Low,Home Care (Green),train
+339.jpg,Other,Not Healed,Uncertain,Non-existent,Existent,Non-existent,Low,Home Care (Green),train
+103.jpg,Ankle,Healed,Adhesives,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+280.jpg,Uncertain,Not Healed,Uncertain,Purulent,Non-existent,Uncertain,Low,Home Care (Green),train
+512.jpg,Other,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+615.jpg,Uncertain,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+467.jpg,Abdomen,Healed,Invisible,Uncertain,Non-existent,Non-existent,Low,Home Care (Green),train
+845.jpg,Cervical region,Not Healed,Adhesives,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+19.jpg,Manus,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+88.jpg,Other,Not Healed,Sutures,Non-existent,Existent,Existent,Medium,Home Care (Green),train
+565.jpg,Abdomen,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+881.jpg,Ankle,Healed,Sutures,Non-existent,Non-existent,Existent,Low,Home Care (Green),train
+813.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+337.jpg,Other,Not Healed,Uncertain,Sanguineous,Non-existent,Non-existent,Medium,"Clinic Visit (Yellow, <48h)",train
+132.jpg,Other,Not Healed,Invisible,Serous,Existent,Existent,Medium,"Clinic Visit (Yellow, <48h)",train
+271.jpg,Cervical region,Not Healed,Invisible,Seropurulent,Non-existent,Non-existent,High,"Emergency Care (Red, immediate)",train
+872.jpg,Abdomen,Healed,Invisible,Sanguineous,Non-existent,Non-existent,Low,Home Care (Green),train
+916.jpg,Other,Not Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+707.jpg,Abdomen,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+449.jpg,Uncertain,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+961.jpg,Other,Not Healed,Uncertain,Non-existent,Non-existent,Non-existent,Medium,Home Care (Green),train
+970.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+897.jpg,Other,Not Healed,Staples,Non-existent,Existent,Existent,Medium,"Clinic Visit (Yellow, <48h)",train
+83.jpg,Patella,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+694.jpg,Abdomen,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+331.jpg,Abdomen,Not Healed,Uncertain,Uncertain,Existent,Uncertain,Low,Home Care (Green),train
+927.jpg,Patella,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+555.jpg,Uncertain,Healed,Sutures,Uncertain,Non-existent,Non-existent,Low,Home Care (Green),train
+468.jpg,Uncertain,Healed,Sutures,Non-existent,Uncertain,Uncertain,Low,Home Care (Green),train
+996.jpg,Other,Not Healed,Sutures,Serous,Non-existent,Non-existent,Medium,Home Care (Green),train
+365.jpg,Uncertain,Healed,Sutures,Non-existent,Existent,Non-existent,Low,Home Care (Green),train
+939.jpg,Abdomen,Not Healed,Uncertain,Sanguineous,Non-existent,Non-existent,Medium,"Clinic Visit (Yellow, <48h)",train
+891.jpg,Other,Not Healed,Uncertain,Sanguineous,Non-existent,Non-existent,Medium,"Clinic Visit (Yellow, <48h)",train
+33.jpg,Abdomen,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+61.jpg,Ankle,Healed,Sutures,Non-existent,Non-existent,Existent,Low,Home Care (Green),train
+118.jpg,Other,Healed,Invisible,Non-existent,Existent,Non-existent,Low,Home Care (Green),train
+101.jpg,Ankle,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+420.jpg,Facial region,Not Healed,Sutures,Non-existent,Non-existent,Existent,Low,Home Care (Green),train
+39.jpg,Abdomen,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+187.jpg,Cervical region,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+0.jpg,Ankle,Not Healed,Sutures,Non-existent,Non-existent,Existent,Medium,Home Care (Green),train
+370.jpg,Uncertain,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+964.jpg,Other,Not Healed,Uncertain,Uncertain,Existent,Existent,High,"Emergency Care (Red, immediate)",train
+49.jpg,Facial region,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+857.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+26.jpg,Ankle,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+21.jpg,Abdomen,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+463.jpg,Abdomen,Not Healed,Sutures,Non-existent,Non-existent,Uncertain,Low,Home Care (Green),train
+415.jpg,Uncertain,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+408.jpg,Uncertain,Not Healed,Sutures,Uncertain,Existent,Uncertain,Low,Home Care (Green),train
+42.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+702.jpg,Uncertain,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+513.jpg,Abdomen,Healed,Sutures,Non-existent,Existent,Non-existent,Low,Home Care (Green),train
+117.jpg,Ankle,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+527.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+696.jpg,Uncertain,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+153.jpg,Other,Not Healed,Sutures,Serous,Existent,Existent,Low,Home Care (Green),train
+585.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+312.jpg,Uncertain,Not Healed,Uncertain,Uncertain,Existent,Uncertain,Low,Home Care (Green),train
+16.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+71.jpg,Other,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+743.jpg,Ankle,Healed,Sutures,Non-existent,Non-existent,Uncertain,Low,Home Care (Green),train
+665.jpg,Uncertain,Not Healed,Uncertain,Purulent,Non-existent,Non-existent,Medium,"Clinic Visit (Yellow, <48h)",train
+394.jpg,Cervical region,Healed,Invisible,Non-existent,Existent,Non-existent,Low,Home Care (Green),train
+51.jpg,Uncertain,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+723.jpg,Ankle,Not Healed,Sutures,Sanguineous,Non-existent,Uncertain,Low,Home Care (Green),train
+174.jpg,Abdomen,Not Healed,Uncertain,Serous,Existent,Existent,Medium,"Clinic Visit (Yellow, <48h)",train
+34.jpg,Abdomen,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+156.jpg,Manus,Healed,Adhesives,Serous,Non-existent,Non-existent,Low,Home Care (Green),train
+876.jpg,Ankle,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+667.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+141.jpg,Other,Not Healed,Sutures,Non-existent,Existent,Existent,Low,Home Care (Green),train
+546.jpg,Other,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+493.jpg,Abdomen,Not Healed,Uncertain,Non-existent,Existent,Non-existent,Low,Home Care (Green),train
+803.jpg,Uncertain,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+52.jpg,Facial region,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+956.jpg,Other,Not Healed,Uncertain,Non-existent,Existent,Non-existent,High,"Emergency Care (Red, immediate)",train
+938.jpg,Manus,Not Healed,Uncertain,Uncertain,Uncertain,Uncertain,Low,Home Care (Green),train
+789.jpg,Facial region,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+906.jpg,Abdomen,Not Healed,Sutures,Uncertain,Non-existent,Uncertain,Medium,Home Care (Green),train
+472.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+712.jpg,Other,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+386.jpg,Uncertain,Not Healed,Uncertain,Uncertain,Existent,Uncertain,Medium,"Clinic Visit (Yellow, <48h)",train
+994.jpg,Abdomen,Not Healed,Uncertain,Serous,Existent,Uncertain,Low,Home Care (Green),train
+593.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+760.jpg,Facial region,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+762.jpg,Uncertain,Not Healed,Uncertain,Uncertain,Non-existent,Uncertain,Low,Home Care (Green),train
+135.jpg,Manus,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+941.jpg,Abdomen,Not Healed,Sutures,Uncertain,Existent,Uncertain,High,Home Care (Green),train
+835.jpg,Patella,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+363.jpg,Other,Not Healed,Sutures,Uncertain,Existent,Existent,High,"Emergency Care (Red, immediate)",train
+375.jpg,Abdomen,Not Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+526.jpg,Uncertain,Not Healed,Sutures,Seropurulent,Existent,Uncertain,Medium,"Clinic Visit (Yellow, <48h)",train
+661.jpg,Abdomen,Not Healed,Uncertain,Non-existent,Non-existent,Non-existent,Medium,"Clinic Visit (Yellow, <48h)",train
+105.jpg,Other,Healed,Sutures,Serous,Non-existent,Non-existent,Low,Home Care (Green),train
+412.jpg,Uncertain,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+37.jpg,Patella,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+583.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+946.jpg,Other,Not Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+840.jpg,Manus,Healed,Invisible,Non-existent,Non-existent,Uncertain,Low,Home Care (Green),train
+893.jpg,Other,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+771.jpg,Uncertain,Not Healed,Invisible,Serous,Non-existent,Non-existent,Low,Home Care (Green),train
+107.jpg,Patella,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+2.jpg,Abdomen,Not Healed,Sutures,Non-existent,Existent,Non-existent,Medium,"Clinic Visit (Yellow, <48h)",train
+443.jpg,Uncertain,Not Healed,Uncertain,Uncertain,Existent,Uncertain,Low,Home Care (Green),train
+479.jpg,Other,Not Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),train
+1.jpg,Ankle,Healed,Invisible,Non-existent,Non-existent,Existent,Low,Home Care (Green),val
+1005.jpg,Uncertain,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),val
+112.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),val
+12.jpg,Abdomen,Not Healed,Sutures,Purulent,Existent,Non-existent,Medium,"Clinic Visit (Yellow, <48h)",val
+140.jpg,Ankle,Not Healed,Invisible,Sanguineous,Existent,Existent,High,"Emergency Care (Red, immediate)",val
+149.jpg,Ankle,Not Healed,Sutures,Non-existent,Existent,Non-existent,Medium,"Clinic Visit (Yellow, <48h)",val
+157.jpg,Ankle,Not Healed,Invisible,Non-existent,Existent,Existent,Medium,"Clinic Visit (Yellow, <48h)",val
+163.jpg,Abdomen,Healed,Sutures,Non-existent,Existent,Existent,Low,Home Care (Green),val
+183.jpg,Uncertain,Not Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),val
+190.jpg,Uncertain,Not Healed,Uncertain,Serous,Existent,Existent,Medium,"Clinic Visit (Yellow, <48h)",val
+20.jpg,Cervical region,Healed,Adhesives,Non-existent,Existent,Non-existent,Low,Home Care (Green),val
+206.jpg,Other,Healed,Uncertain,Non-existent,Existent,Uncertain,Low,Home Care (Green),val
+207.jpg,Other,Healed,Uncertain,Non-existent,Existent,Existent,Medium,"Clinic Visit (Yellow, <48h)",val
+216.jpg,Facial region,Not Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),val
+284.jpg,Manus,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),val
+287.jpg,Facial region,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),val
+302.jpg,Abdomen,Healed,Sutures,Non-existent,Existent,Non-existent,Low,Home Care (Green),val
+314.jpg,Uncertain,Not Healed,Uncertain,Serous,Existent,Uncertain,Low,Home Care (Green),val
+320.jpg,Uncertain,Not Healed,Sutures,Purulent,Existent,Non-existent,Medium,"Clinic Visit (Yellow, <48h)",val
+342.jpg,Facial region,Healed,Sutures,Non-existent,Existent,Non-existent,Low,Home Care (Green),val
+378.jpg,Abdomen,Not Healed,Uncertain,Purulent,Non-existent,Non-existent,Medium,"Clinic Visit (Yellow, <48h)",val
+379.jpg,Uncertain,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),val
+387.jpg,Uncertain,Not Healed,Sutures,Non-existent,Existent,Uncertain,Low,Home Care (Green),val
+402.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),val
+404.jpg,Uncertain,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),val
+422.jpg,Uncertain,Not Healed,Uncertain,Uncertain,Existent,Uncertain,Medium,"Clinic Visit (Yellow, <48h)",val
+425.jpg,Other,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),val
+430.jpg,Cervical region,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),val
+446.jpg,Ankle,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),val
+47.jpg,Abdomen,Not Healed,Sutures,Non-existent,Existent,Existent,Medium,"Clinic Visit (Yellow, <48h)",val
+480.jpg,Ankle,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),val
+50.jpg,Facial region,Not Healed,Sutures,Seropurulent,Existent,Non-existent,Medium,"Clinic Visit (Yellow, <48h)",val
+503.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),val
+516.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),val
+517.jpg,Facial region,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),val
+532.jpg,Uncertain,Not Healed,Uncertain,Uncertain,Uncertain,Uncertain,Low,Home Care (Green),val
+550.jpg,Uncertain,Not Healed,Sutures,Seropurulent,Existent,Non-existent,Low,Home Care (Green),val
+568.jpg,Uncertain,Healed,Uncertain,Uncertain,Uncertain,Uncertain,Low,Home Care (Green),val
+597.jpg,Uncertain,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),val
+627.jpg,Abdomen,Not Healed,Uncertain,Purulent,Existent,Non-existent,Medium,"Clinic Visit (Yellow, <48h)",val
+64.jpg,Facial region,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),val
+653.jpg,Abdomen,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),val
+666.jpg,Facial region,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),val
+671.jpg,Abdomen,Not Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),val
+698.jpg,Uncertain,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),val
+70.jpg,Facial region,Healed,Invisible,Non-existent,Non-existent,Existent,Low,Home Care (Green),val
+715.jpg,Other,Not Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),val
+725.jpg,Cervical region,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),val
+731.jpg,Uncertain,Healed,Invisible,Non-existent,Non-existent,Uncertain,Low,Home Care (Green),val
+736.jpg,Abdomen,Not Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),val
+750.jpg,Uncertain,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),val
+753.jpg,Patella,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),val
+755.jpg,Abdomen,Not Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),val
+761.jpg,Ankle,Not Healed,Sutures,Uncertain,Uncertain,Existent,Low,Home Care (Green),val
+797.jpg,Abdomen,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),val
+798.jpg,Uncertain,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),val
+804.jpg,Facial region,Not Healed,Sutures,Non-existent,Existent,Non-existent,Low,Home Care (Green),val
+810.jpg,Facial region,Not Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),val
+82.jpg,Cervical region,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),val
+837.jpg,Uncertain,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),val
+84.jpg,Abdomen,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),val
+890.jpg,Abdomen,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),val
+94.jpg,Cervical region,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),val
+945.jpg,Abdomen,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),val
+95.jpg,Ankle,Not Healed,Sutures,Non-existent,Existent,Non-existent,Medium,Home Care (Green),val
+971.jpg,Abdomen,Not Healed,Sutures,Uncertain,Existent,Uncertain,Medium,Home Care (Green),val
+976.jpg,Ankle,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),val
+979.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),val
+988.jpg,Other,Not Healed,Uncertain,Non-existent,Non-existent,Existent,Medium,"Clinic Visit (Yellow, <48h)",val
+424.jpg,Uncertain,Not Healed,Uncertain,Sanguineous,Existent,Non-existent,Medium,Home Care (Green),test
+679.jpg,Other,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+663.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+714.jpg,Uncertain,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+880.jpg,Ankle,Not Healed,Sutures,Non-existent,Existent,Existent,Low,Home Care (Green),test
+457.jpg,Other,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+194.jpg,Uncertain,Not Healed,Uncertain,Uncertain,Non-existent,Uncertain,Low,Home Care (Green),test
+501.jpg,Ankle,Healed,Sutures,Non-existent,Non-existent,Existent,Low,Home Care (Green),test
+93.jpg,Abdomen,Healed,Adhesives,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+110.jpg,Abdomen,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+470.jpg,Manus,Healed,Invisible,Non-existent,Existent,Non-existent,Low,Home Care (Green),test
+41.jpg,Cervical region,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+807.jpg,Facial region,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+3.jpg,Other,Not Healed,Invisible,Non-existent,Existent,Non-existent,Medium,"Clinic Visit (Yellow, <48h)",test
+385.jpg,Uncertain,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+267.jpg,Other,Not Healed,Sutures,Non-existent,Existent,Uncertain,Low,Home Care (Green),test
+590.jpg,Ankle,Not Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+125.jpg,Manus,Healed,Sutures,Non-existent,Non-existent,Existent,Low,Home Care (Green),test
+46.jpg,Manus,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+237.jpg,Other,Not Healed,Sutures,Serous,Non-existent,Non-existent,Low,Home Care (Green),test
+899.jpg,Uncertain,Not Healed,Sutures,Purulent,Non-existent,Non-existent,Medium,"Clinic Visit (Yellow, <48h)",test
+709.jpg,Abdomen,Not Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+193.jpg,Abdomen,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+984.jpg,Other,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+311.jpg,Other,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+44.jpg,Abdomen,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+111.jpg,Abdomen,Not Healed,Invisible,Purulent,Existent,Existent,High,"Clinic Visit (Yellow, <48h)",test
+478.jpg,Abdomen,Not Healed,Uncertain,Uncertain,Existent,Uncertain,Low,Home Care (Green),test
+459.jpg,Abdomen,Not Healed,Uncertain,Non-existent,Existent,Uncertain,Low,Home Care (Green),test
+626.jpg,Uncertain,Healed,Uncertain,Non-existent,Existent,Non-existent,Low,Home Care (Green),test
+25.jpg,Facial region,Not Healed,Sutures,Non-existent,Non-existent,Existent,Medium,"Clinic Visit (Yellow, <48h)",test
+253.jpg,Uncertain,Not Healed,Uncertain,Serous,Existent,Existent,Low,Home Care (Green),test
+146.jpg,Other,Not Healed,Invisible,Sanguineous,Existent,Non-existent,Medium,"Clinic Visit (Yellow, <48h)",test
+139.jpg,Cervical region,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+79.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Existent,Low,Home Care (Green),test
+521.jpg,Uncertain,Healed,Sutures,Non-existent,Existent,Non-existent,Low,Home Care (Green),test
+419.jpg,Other,Not Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+842.jpg,Ankle,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+787.jpg,Facial region,Not Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+578.jpg,Facial region,Healed,Adhesives,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+937.jpg,Other,Not Healed,Uncertain,Non-existent,Existent,Non-existent,High,"Emergency Care (Red, immediate)",test
+700.jpg,Uncertain,Not Healed,Uncertain,Serous,Uncertain,Uncertain,Low,Home Care (Green),test
+143.jpg,Patella,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+944.jpg,Ankle,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+66.jpg,Facial region,Not Healed,Sutures,Non-existent,Existent,Existent,Medium,"Clinic Visit (Yellow, <48h)",test
+68.jpg,Other,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+299.jpg,Uncertain,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+63.jpg,Ankle,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+87.jpg,Patella,Not Healed,Sutures,Non-existent,Existent,Existent,Medium,"Clinic Visit (Yellow, <48h)",test
+334.jpg,Other,Healed,Uncertain,Non-existent,Uncertain,Non-existent,Low,Home Care (Green),test
+124.jpg,Uncertain,Not Healed,Sutures,Non-existent,Existent,Existent,Medium,"Clinic Visit (Yellow, <48h)",test
+411.jpg,Abdomen,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+705.jpg,Uncertain,Not Healed,Uncertain,Uncertain,Uncertain,Uncertain,Low,Home Care (Green),test
+13.jpg,Abdomen,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+178.jpg,Facial region,Not Healed,Sutures,Serous,Existent,Non-existent,Low,Home Care (Green),test
+477.jpg,Facial region,Not Healed,Sutures,Uncertain,Uncertain,Uncertain,Low,Home Care (Green),test
+214.jpg,Uncertain,Not Healed,Uncertain,Uncertain,Existent,Uncertain,Low,Home Care (Green),test
+22.jpg,Other,Healed,Invisible,Non-existent,Non-existent,Existent,Low,Home Care (Green),test
+811.jpg,Uncertain,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+788.jpg,Uncertain,Not Healed,Uncertain,Serous,Non-existent,Uncertain,Low,Home Care (Green),test
+659.jpg,Facial region,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+602.jpg,Ankle,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+974.jpg,Other,Healed,Invisible,Non-existent,Existent,Uncertain,Low,Home Care (Green),test
+100.jpg,Ankle,Healed,Sutures,Non-existent,Existent,Existent,Low,Home Care (Green),test
+436.jpg,Facial region,Not Healed,Sutures,Non-existent,Existent,Uncertain,Low,Home Care (Green),test
+315.jpg,Uncertain,Not Healed,Sutures,Non-existent,Existent,Uncertain,Low,Home Care (Green),test
+392.jpg,Abdomen,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+495.jpg,Uncertain,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+686.jpg,Uncertain,Healed,Staples,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+30.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+257.jpg,Abdomen,Not Healed,Uncertain,Uncertain,Existent,Uncertain,Low,Home Care (Green),test
+104.jpg,Manus,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+544.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+75.jpg,Other,Healed,Sutures,Non-existent,Existent,Non-existent,Low,Home Care (Green),test
+67.jpg,Ankle,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+268.jpg,Other,Not Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+985.jpg,Other,Not Healed,Sutures,Non-existent,Non-existent,Existent,Medium,"Clinic Visit (Yellow, <48h)",test
+134.jpg,Abdomen,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+592.jpg,Other,Not Healed,Uncertain,Uncertain,Existent,Uncertain,Low,Home Care (Green),test
+777.jpg,Facial region,Not Healed,Sutures,Seropurulent,Existent,Non-existent,Medium,Home Care (Green),test
+180.jpg,Facial region,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+15.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+884.jpg,Ankle,Healed,Sutures,Non-existent,Non-existent,Existent,Low,Home Care (Green),test
+983.jpg,Other,Not Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+612.jpg,Other,Not Healed,Uncertain,Sanguineous,Non-existent,Non-existent,High,"Emergency Care (Red, immediate)",test
+786.jpg,Facial region,Not Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+465.jpg,Other,Not Healed,Sutures,Non-existent,Non-existent,Non-existent,Medium,"Clinic Visit (Yellow, <48h)",test
+657.jpg,Facial region,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+942.jpg,Other,Not Healed,Uncertain,Serous,Existent,Non-existent,Medium,"Clinic Visit (Yellow, <48h)",test
+99.jpg,Ankle,Healed,Sutures,Non-existent,Non-existent,Existent,Low,Home Care (Green),test
+928.jpg,Abdomen,Not Healed,Sutures,Serous,Existent,Non-existent,Low,Home Care (Green),test
+973.jpg,Ankle,Not Healed,Uncertain,Non-existent,Existent,Non-existent,High,"Emergency Care (Red, immediate)",test
+533.jpg,Uncertain,Healed,Sutures,Non-existent,Existent,Non-existent,Low,Home Care (Green),test
+511.jpg,Manus,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+718.jpg,Patella,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+209.jpg,Other,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+291.jpg,Ankle,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+282.jpg,Abdomen,Not Healed,Adhesives,Purulent,Non-existent,Non-existent,Medium,"Clinic Visit (Yellow, <48h)",test
+90.jpg,Other,Not Healed,Sutures,Non-existent,Existent,Existent,Medium,Home Care (Green),test
+276.jpg,Cervical region,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+471.jpg,Uncertain,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+119.jpg,Other,Not Healed,Sutures,Non-existent,Existent,Existent,Low,Home Care (Green),test
+520.jpg,Uncertain,Not Healed,Invisible,Non-existent,Existent,Non-existent,Low,Home Care (Green),test
+588.jpg,Uncertain,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+933.jpg,Other,Not Healed,Uncertain,Non-existent,Existent,Non-existent,Low,Home Care (Green),test
+582.jpg,Uncertain,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+560.jpg,Uncertain,Healed,Sutures,Non-existent,Non-existent,Uncertain,Low,Home Care (Green),test
+734.jpg,Facial region,Healed,Sutures,Non-existent,Non-existent,Uncertain,Low,Home Care (Green),test
+625.jpg,Ankle,Not Healed,Sutures,Uncertain,Existent,Existent,Low,Home Care (Green),test
+717.jpg,Uncertain,Not Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+442.jpg,Ankle,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+675.jpg,Uncertain,Healed,Sutures,Non-existent,Non-existent,Uncertain,Low,Home Care (Green),test
+943.jpg,Ankle,Not Healed,Sutures,Serous,Existent,Uncertain,High,"Emergency Care (Red, immediate)",test
+77.jpg,Facial region,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+265.jpg,Uncertain,Not Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+396.jpg,Manus,Healed,Sutures,Non-existent,Existent,Existent,Low,Home Care (Green),test
+155.jpg,Manus,Not Healed,Adhesives,Sanguineous,Existent,Non-existent,Medium,Home Care (Green),test
+805.jpg,Manus,Not Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+240.jpg,Manus,Healed,Uncertain,Uncertain,Existent,Non-existent,Low,Home Care (Green),test
+405.jpg,Abdomen,Healed,Uncertain,Non-existent,Non-existent,Existent,Low,Home Care (Green),test
+575.jpg,Other,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+377.jpg,Abdomen,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+31.jpg,Ankle,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+451.jpg,Other,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+372.jpg,Manus,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+576.jpg,Abdomen,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+634.jpg,Cervical region,Healed,Invisible,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+623.jpg,Ankle,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+674.jpg,Uncertain,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+476.jpg,Uncertain,Healed,Sutures,Non-existent,Non-existent,Uncertain,Low,Home Care (Green),test
+553.jpg,Uncertain,Healed,Sutures,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+806.jpg,Other,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test
+481.jpg,Other,Not Healed,Uncertain,Uncertain,Non-existent,Uncertain,Low,Home Care (Green),test
+767.jpg,Abdomen,Not Healed,Uncertain,Uncertain,Existent,Uncertain,Low,Home Care (Green),test
+445.jpg,Uncertain,Not Healed,Uncertain,Uncertain,Uncertain,Uncertain,Low,Home Care (Green),test
+907.jpg,Ankle,Healed,Uncertain,Non-existent,Uncertain,Existent,Low,Home Care (Green),test
+382.jpg,Uncertain,Healed,Uncertain,Non-existent,Non-existent,Non-existent,Low,Home Care (Green),test

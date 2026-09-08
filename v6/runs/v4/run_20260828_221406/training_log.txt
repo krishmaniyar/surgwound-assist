@@ -1,0 +1,39 @@
+SurgWound Pipeline v4.0 (End-to-End) — 2026-08-28 22:14:06.845577
+Device: cuda
+
+
+============================================================
+End-to-End Multi-Task Fine-Tuning
+Epochs: 30 | Batch: 8 | Accum: 2 | LR: 2e-05
+============================================================
+  Epoch  1/30 [P1:Focal] loss=5.1632  val_mean_f1=0.3274  best=0.3274  elapsed=22s  no_improve=0
+  Epoch  2/30 [P1:Focal] loss=2.3987  val_mean_f1=0.2578  best=0.3274  elapsed=43s  no_improve=1
+  Epoch  3/30 [P1:Focal] loss=1.8075  val_mean_f1=0.2875  best=0.3274  elapsed=65s  no_improve=2
+  Epoch  4/30 [P1:Focal] loss=1.1940  val_mean_f1=0.3036  best=0.3274  elapsed=85s  no_improve=3
+  Epoch  5/30 [P1:Focal] loss=0.9382  val_mean_f1=0.3595  best=0.3595  elapsed=106s  no_improve=0
+  Epoch  6/30 [P1:Focal] loss=0.7468  val_mean_f1=0.4185  best=0.4185  elapsed=127s  no_improve=0
+  Epoch  7/30 [P1:Focal] loss=0.5388  val_mean_f1=0.4095  best=0.4185  elapsed=148s  no_improve=1
+  Epoch  8/30 [P1:Focal] loss=0.3114  val_mean_f1=0.4099  best=0.4185  elapsed=169s  no_improve=2
+  Epoch  9/30 [P1:Focal] loss=0.2636  val_mean_f1=0.4170  best=0.4185  elapsed=190s  no_improve=3
+  Epoch 10/30 [P1:Focal] loss=0.2361  val_mean_f1=0.3922  best=0.4185  elapsed=211s  no_improve=4
+  Epoch 11/30 [P1:Focal] loss=0.2992  val_mean_f1=0.4007  best=0.4185  elapsed=231s  no_improve=5
+  Epoch 12/30 [P1:Focal] loss=0.4167  val_mean_f1=0.4071  best=0.4185  elapsed=252s  no_improve=6
+  Epoch 13/30 [P1:Focal] loss=0.3032  val_mean_f1=0.4259  best=0.4259  elapsed=273s  no_improve=0
+  Epoch 14/30 [P1:Focal] loss=0.4559  val_mean_f1=0.3964  best=0.4259  elapsed=293s  no_improve=1
+  Epoch 15/30 [P1:Focal] loss=0.1835  val_mean_f1=0.4319  best=0.4319  elapsed=313s  no_improve=0
+  Epoch 16/30 [P1:Focal] loss=0.1716  val_mean_f1=0.4698  best=0.4698  elapsed=333s  no_improve=0
+  Epoch 17/30 [P1:Focal] loss=0.1058  val_mean_f1=0.4791  best=0.4791  elapsed=352s  no_improve=0
+  Epoch 18/30 [P1:Focal] loss=0.0580  val_mean_f1=0.4372  best=0.4791  elapsed=372s  no_improve=1
+  Epoch 19/30 [P2:LDAM] loss=59.8084  val_mean_f1=0.5102  best=0.5102  elapsed=391s  no_improve=0
+  Epoch 20/30 [P2:LDAM] loss=29.2577  val_mean_f1=0.5820  best=0.5820  elapsed=411s  no_improve=0
+  Epoch 21/30 [P2:LDAM] loss=26.3552  val_mean_f1=0.5493  best=0.5820  elapsed=430s  no_improve=1
+  Epoch 22/30 [P2:LDAM] loss=30.5369  val_mean_f1=0.4964  best=0.5820  elapsed=450s  no_improve=2
+  Epoch 23/30 [P2:LDAM] loss=25.2224  val_mean_f1=0.5127  best=0.5820  elapsed=470s  no_improve=3
+  Epoch 24/30 [P2:LDAM] loss=20.8859  val_mean_f1=0.5450  best=0.5820  elapsed=489s  no_improve=4
+  Epoch 25/30 [P2:LDAM] loss=10.4946  val_mean_f1=0.5468  best=0.5820  elapsed=509s  no_improve=5
+  Epoch 26/30 [P2:LDAM] loss=11.0783  val_mean_f1=0.5453  best=0.5820  elapsed=528s  no_improve=6
+  Epoch 27/30 [P2:LDAM] loss=6.0066  val_mean_f1=0.5522  best=0.5820  elapsed=548s  no_improve=7
+  Epoch 28/30 [P2:LDAM] loss=6.3582  val_mean_f1=0.5885  best=0.5885  elapsed=567s  no_improve=0
+  Epoch 29/30 [P2:LDAM] loss=3.9828  val_mean_f1=0.6210  best=0.6210  elapsed=587s  no_improve=0
+  Epoch 30/30 [P2:LDAM] loss=4.3118  val_mean_f1=0.6082  best=0.6210  elapsed=607s  no_improve=1
+  [DONE] best_val_mean_macro_f1=0.6210  ckpt=runs\run_20260828_221406\checkpoints\end_to_end_model.pth

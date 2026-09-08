@@ -1,0 +1,3 @@
+SurgWound Pipeline v4.0 (End-to-End) — 2026-08-28 22:12:19.222715
+Device: cuda
+

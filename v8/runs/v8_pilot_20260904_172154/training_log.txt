@@ -1,0 +1,5 @@
+======================================================================
+SURGWOUND ASSIST V8 TRAINING — Strategy: LOGIT_ADJUSTED
+Device: cuda | Epochs: 3 | Batch: 16 | Accum: 2 | LR: 3.00e-05
+Multiscale: False | Text Prototypes: True | Legacy Mode: True | Seed: 42
+======================================================================

@@ -1,0 +1,257 @@
+SurgWound Pipeline — 2026-08-28 21:33:03.810002
+Device: cuda
+Backbones: DINOv2=facebook/dinov2-base (768d), CLIP=ViT-L-14/laion2b_s32b_b82k (768d)
+
+
+============================================================
+[HEAD] attr=location  backbone=dinov2  device=cuda
+       input_dim=768  hidden_dim=512
+       epochs=150  DRW starts at epoch 90
+       cls_num_list=[46, 14, 35, 29, 20, 15, 85, 0]
+============================================================
+  Epoch    1/150 [P1:Focal] loss=1.1616  val_macro_f1=0.4037  best=0.4037  elapsed=0s  no_improve=0
+  Epoch   10/150 [P1:Focal] loss=0.0203  val_macro_f1=0.6598  best=0.6598  elapsed=0s  no_improve=0
+  Epoch   20/150 [P1:Focal] loss=0.0062  val_macro_f1=0.5705  best=0.6989  elapsed=1s  no_improve=4
+  Epoch   30/150 [P1:Focal] loss=0.0009  val_macro_f1=0.6242  best=0.6989  elapsed=1s  no_improve=14
+  Epoch   40/150 [P1:Focal] loss=0.0005  val_macro_f1=0.6501  best=0.6989  elapsed=2s  no_improve=24
+  [EarlyStopping] Stopped at epoch 41 (patience=25)
+  [DONE] location/dinov2: best_val_macro_f1=0.6989  ckpt=runs\run_20260828_213304\checkpoints\mlp_dinov2_location.pth
+
+============================================================
+[HEAD] attr=healing_status  backbone=dinov2  device=cuda
+       input_dim=768  hidden_dim=256
+       epochs=150  DRW starts at epoch 90
+       cls_num_list=[171, 73]
+============================================================
+  Epoch    1/150 [P1:Focal] loss=0.7013  val_macro_f1=0.4173  best=0.4173  elapsed=0s  no_improve=0
+  Epoch   10/150 [P1:Focal] loss=0.0404  val_macro_f1=0.5833  best=0.6196  elapsed=0s  no_improve=8
+  Epoch   20/150 [P1:Focal] loss=0.0068  val_macro_f1=0.7900  best=0.7900  elapsed=1s  no_improve=0
+  Epoch   30/150 [P1:Focal] loss=0.0019  val_macro_f1=0.7086  best=0.7900  elapsed=2s  no_improve=10
+  Epoch   40/150 [P1:Focal] loss=0.0015  val_macro_f1=0.7086  best=0.7900  elapsed=2s  no_improve=20
+  [EarlyStopping] Stopped at epoch 45 (patience=25)
+  [DONE] healing_status/dinov2: best_val_macro_f1=0.7900  ckpt=runs\run_20260828_213304\checkpoints\mlp_dinov2_healing_status.pth
+
+============================================================
+[HEAD] attr=closure_method  backbone=dinov2  device=cuda
+       input_dim=768  hidden_dim=1024
+       epochs=150  DRW starts at epoch 90
+       cls_num_list=[63, 170, 3, 8, 0]
+============================================================
+  Epoch    1/150 [P1:Focal] loss=0.2195  val_macro_f1=0.0484  best=0.0484  elapsed=0s  no_improve=0
+  Epoch   10/150 [P1:Focal] loss=0.0012  val_macro_f1=0.4724  best=0.4724  elapsed=1s  no_improve=0
+  Epoch   20/150 [P1:Focal] loss=0.0005  val_macro_f1=0.4130  best=0.5619  elapsed=1s  no_improve=5
+  Epoch   30/150 [P1:Focal] loss=0.0004  val_macro_f1=0.5782  best=0.5944  elapsed=2s  no_improve=8
+  Epoch   40/150 [P1:Focal] loss=0.0004  val_macro_f1=0.5782  best=0.5944  elapsed=2s  no_improve=18
+  [EarlyStopping] Stopped at epoch 47 (patience=25)
+  [DONE] closure_method/dinov2: best_val_macro_f1=0.5944  ckpt=runs\run_20260828_213304\checkpoints\mlp_dinov2_closure_method.pth
+
+============================================================
+[HEAD] attr=exudate_type  backbone=dinov2  device=cuda
+       input_dim=768  hidden_dim=512
+       epochs=150  DRW starts at epoch 90
+       cls_num_list=[214, 9, 11, 6, 4, 0]
+============================================================
+  Epoch    1/150 [P1:Focal] loss=0.7808  val_macro_f1=0.0000  best=0.0000  elapsed=0s  no_improve=0
+  Epoch   10/150 [P1:Focal] loss=0.0017  val_macro_f1=0.0000  best=0.0000  elapsed=1s  no_improve=9
+  Epoch   20/150 [P1:Focal] loss=0.0002  val_macro_f1=0.0114  best=0.0114  elapsed=1s  no_improve=7
+  Epoch   30/150 [P1:Focal] loss=0.0001  val_macro_f1=0.0421  best=0.0600  elapsed=2s  no_improve=5
+  Epoch   40/150 [P1:Focal] loss=0.0001  val_macro_f1=0.0513  best=0.0600  elapsed=2s  no_improve=15
+  Epoch   50/150 [P1:Focal] loss=0.0002  val_macro_f1=0.0600  best=0.0600  elapsed=3s  no_improve=25
+  [EarlyStopping] Stopped at epoch 50 (patience=25)
+  [DONE] exudate_type/dinov2: best_val_macro_f1=0.0600  ckpt=runs\run_20260828_213304\checkpoints\mlp_dinov2_exudate_type.pth
+
+============================================================
+[HEAD] attr=erythema  backbone=dinov2  device=cuda
+       input_dim=768  hidden_dim=1024
+       epochs=150  DRW starts at epoch 90
+       cls_num_list=[188, 56, 0]
+============================================================
+  Epoch    1/150 [P1:Focal] loss=0.5146  val_macro_f1=0.1114  best=0.1114  elapsed=0s  no_improve=0
+  Epoch   10/150 [P1:Focal] loss=0.0318  val_macro_f1=0.5766  best=0.6500  elapsed=0s  no_improve=4
+  Epoch   20/150 [P1:Focal] loss=0.0051  val_macro_f1=0.4173  best=0.6500  elapsed=1s  no_improve=14
+  Epoch   30/150 [P1:Focal] loss=0.0001  val_macro_f1=0.4444  best=0.6500  elapsed=1s  no_improve=24
+  [EarlyStopping] Stopped at epoch 31 (patience=25)
+  [DONE] erythema/dinov2: best_val_macro_f1=0.6500  ckpt=runs\run_20260828_213304\checkpoints\mlp_dinov2_erythema.pth
+
+============================================================
+[HEAD] attr=edema  backbone=dinov2  device=cuda
+       input_dim=768  hidden_dim=1024
+       epochs=150  DRW starts at epoch 90
+       cls_num_list=[204, 40, 0]
+============================================================
+  Epoch    1/150 [P1:Focal] loss=0.7068  val_macro_f1=0.2834  best=0.2834  elapsed=0s  no_improve=0
+  Epoch   10/150 [P1:Focal] loss=0.0230  val_macro_f1=0.7667  best=0.7667  elapsed=0s  no_improve=0
+  Epoch   20/150 [P1:Focal] loss=0.0006  val_macro_f1=0.7177  best=0.7667  elapsed=1s  no_improve=10
+  Epoch   30/150 [P1:Focal] loss=0.0002  val_macro_f1=0.8087  best=0.8087  elapsed=2s  no_improve=8
+  Epoch   40/150 [P1:Focal] loss=0.0000  val_macro_f1=0.6354  best=0.8087  elapsed=2s  no_improve=18
+  [EarlyStopping] Stopped at epoch 47 (patience=25)
+  [DONE] edema/dinov2: best_val_macro_f1=0.8087  ckpt=runs\run_20260828_213304\checkpoints\mlp_dinov2_edema.pth
+
+============================================================
+[HEAD] attr=infection_risk  backbone=dinov2  device=cuda
+       input_dim=768  hidden_dim=1024
+       epochs=150  DRW starts at epoch 90
+       cls_num_list=[207, 32, 5]
+============================================================
+  Epoch    1/150 [P1:Focal] loss=0.2560  val_macro_f1=0.0556  best=0.0556  elapsed=0s  no_improve=0
+  Epoch   10/150 [P1:Focal] loss=0.0018  val_macro_f1=0.3342  best=0.3342  elapsed=1s  no_improve=0
+  Epoch   20/150 [P1:Focal] loss=0.0007  val_macro_f1=0.4898  best=0.5727  elapsed=1s  no_improve=2
+  Epoch   30/150 [P1:Focal] loss=0.0005  val_macro_f1=0.5513  best=0.5949  elapsed=2s  no_improve=9
+  Epoch   40/150 [P1:Focal] loss=0.0003  val_macro_f1=0.6182  best=0.6182  elapsed=2s  no_improve=5
+  Epoch   50/150 [P1:Focal] loss=0.0004  val_macro_f1=0.6182  best=0.6182  elapsed=3s  no_improve=15
+  Epoch   60/150 [P1:Focal] loss=0.0001  val_macro_f1=0.6182  best=0.6429  elapsed=4s  no_improve=9
+  Epoch   70/150 [P1:Focal] loss=0.0001  val_macro_f1=0.6225  best=0.6694  elapsed=4s  no_improve=3
+  Epoch   80/150 [P1:Focal] loss=0.0001  val_macro_f1=0.6225  best=0.6694  elapsed=5s  no_improve=13
+  Epoch   90/150 [P1:Focal] loss=0.0000  val_macro_f1=0.6500  best=0.6694  elapsed=5s  no_improve=23
+  [EarlyStopping] Stopped at epoch 92 (patience=25)
+  [DONE] infection_risk/dinov2: best_val_macro_f1=0.6694  ckpt=runs\run_20260828_213304\checkpoints\mlp_dinov2_infection_risk.pth
+
+============================================================
+[HEAD] attr=urgency_level  backbone=dinov2  device=cuda
+       input_dim=768  hidden_dim=512
+       epochs=150  DRW starts at epoch 90
+       cls_num_list=[216, 25, 3]
+============================================================
+  Epoch    1/150 [P1:Focal] loss=0.0697  val_macro_f1=0.0600  best=0.0600  elapsed=0s  no_improve=0
+  Epoch   10/150 [P1:Focal] loss=0.0005  val_macro_f1=0.0972  best=0.0972  elapsed=1s  no_improve=6
+  Epoch   20/150 [P1:Focal] loss=0.0003  val_macro_f1=0.1322  best=0.1485  elapsed=1s  no_improve=5
+  Epoch   30/150 [P1:Focal] loss=0.0002  val_macro_f1=0.1795  best=0.1795  elapsed=2s  no_improve=5
+  Epoch   40/150 [P1:Focal] loss=0.0002  val_macro_f1=0.1941  best=0.1941  elapsed=2s  no_improve=5
+  Epoch   50/150 [P1:Focal] loss=0.0002  val_macro_f1=0.1941  best=0.1941  elapsed=3s  no_improve=15
+  Epoch   60/150 [P1:Focal] loss=0.0001  val_macro_f1=0.3007  best=0.3137  elapsed=3s  no_improve=1
+  Epoch   70/150 [P1:Focal] loss=0.0001  val_macro_f1=0.5536  best=0.5536  elapsed=4s  no_improve=0
+  Epoch   80/150 [P1:Focal] loss=0.0001  val_macro_f1=0.5749  best=0.5749  elapsed=5s  no_improve=0
+  Epoch   90/150 [P1:Focal] loss=0.0000  val_macro_f1=0.5749  best=0.5749  elapsed=5s  no_improve=10
+  Epoch  100/150 [P2:LDAM] loss=0.0053  val_macro_f1=0.4776  best=0.6354  elapsed=6s  no_improve=8
+  Epoch  110/150 [P2:LDAM] loss=0.0477  val_macro_f1=0.5146  best=0.6354  elapsed=7s  no_improve=18
+  Epoch  120/150 [P2:LDAM] loss=0.0164  val_macro_f1=0.6812  best=0.6812  elapsed=7s  no_improve=0
+  Epoch  130/150 [P2:LDAM] loss=0.0049  val_macro_f1=0.6769  best=0.6812  elapsed=8s  no_improve=10
+  Epoch  140/150 [P2:LDAM] loss=0.0000  val_macro_f1=0.6769  best=0.6812  elapsed=8s  no_improve=20
+  [EarlyStopping] Stopped at epoch 145 (patience=25)
+  [DONE] urgency_level/dinov2: best_val_macro_f1=0.6812  ckpt=runs\run_20260828_213304\checkpoints\mlp_dinov2_urgency_level.pth
+
+============================================================
+[HEAD] attr=location  backbone=clip  device=cuda
+       input_dim=768  hidden_dim=512
+       epochs=150  DRW starts at epoch 90
+       cls_num_list=[46, 14, 35, 29, 20, 15, 85, 0]
+============================================================
+  Epoch    1/150 [P1:Focal] loss=1.2674  val_macro_f1=0.1961  best=0.1961  elapsed=0s  no_improve=0
+  Epoch   10/150 [P1:Focal] loss=0.0403  val_macro_f1=0.6505  best=0.6505  elapsed=0s  no_improve=0
+  Epoch   20/150 [P1:Focal] loss=0.0030  val_macro_f1=0.7414  best=0.7708  elapsed=1s  no_improve=7
+  Epoch   30/150 [P1:Focal] loss=0.0005  val_macro_f1=0.7178  best=0.7846  elapsed=1s  no_improve=4
+  Epoch   40/150 [P1:Focal] loss=0.0007  val_macro_f1=0.6655  best=0.7846  elapsed=2s  no_improve=14
+  Epoch   50/150 [P1:Focal] loss=0.0002  val_macro_f1=0.7693  best=0.7846  elapsed=2s  no_improve=24
+  [EarlyStopping] Stopped at epoch 51 (patience=25)
+  [DONE] location/clip: best_val_macro_f1=0.7846  ckpt=runs\run_20260828_213304\checkpoints\mlp_clip_location.pth
+
+============================================================
+[HEAD] attr=healing_status  backbone=clip  device=cuda
+       input_dim=768  hidden_dim=256
+       epochs=150  DRW starts at epoch 90
+       cls_num_list=[171, 73]
+============================================================
+  Epoch    1/150 [P1:Focal] loss=0.7035  val_macro_f1=0.4262  best=0.4262  elapsed=0s  no_improve=0
+  Epoch   10/150 [P1:Focal] loss=0.0463  val_macro_f1=0.7200  best=0.7822  elapsed=0s  no_improve=6
+  Epoch   20/150 [P1:Focal] loss=0.0171  val_macro_f1=0.5536  best=0.7822  elapsed=1s  no_improve=16
+  [EarlyStopping] Stopped at epoch 29 (patience=25)
+  [DONE] healing_status/clip: best_val_macro_f1=0.7822  ckpt=runs\run_20260828_213304\checkpoints\mlp_clip_healing_status.pth
+
+============================================================
+[HEAD] attr=closure_method  backbone=clip  device=cuda
+       input_dim=768  hidden_dim=1024
+       epochs=150  DRW starts at epoch 90
+       cls_num_list=[63, 170, 3, 8, 0]
+============================================================
+  Epoch    1/150 [P1:Focal] loss=0.4747  val_macro_f1=0.0556  best=0.0556  elapsed=0s  no_improve=0
+  Epoch   10/150 [P1:Focal] loss=0.0014  val_macro_f1=0.1213  best=0.2225  elapsed=1s  no_improve=2
+  Epoch   20/150 [P1:Focal] loss=0.0009  val_macro_f1=0.2348  best=0.2348  elapsed=1s  no_improve=0
+  Epoch   30/150 [P1:Focal] loss=0.0006  val_macro_f1=0.2348  best=0.2348  elapsed=2s  no_improve=10
+  Epoch   40/150 [P1:Focal] loss=0.0006  val_macro_f1=0.2348  best=0.2348  elapsed=2s  no_improve=20
+  [EarlyStopping] Stopped at epoch 45 (patience=25)
+  [DONE] closure_method/clip: best_val_macro_f1=0.2348  ckpt=runs\run_20260828_213304\checkpoints\mlp_clip_closure_method.pth
+
+============================================================
+[HEAD] attr=exudate_type  backbone=clip  device=cuda
+       input_dim=768  hidden_dim=512
+       epochs=150  DRW starts at epoch 90
+       cls_num_list=[214, 9, 11, 6, 4, 0]
+============================================================
+  Epoch    1/150 [P1:Focal] loss=0.5503  val_macro_f1=0.0000  best=0.0000  elapsed=0s  no_improve=0
+  Epoch   10/150 [P1:Focal] loss=0.0089  val_macro_f1=0.0000  best=0.0556  elapsed=1s  no_improve=7
+  Epoch   20/150 [P1:Focal] loss=0.0005  val_macro_f1=0.0000  best=0.0556  elapsed=1s  no_improve=17
+  [EarlyStopping] Stopped at epoch 28 (patience=25)
+  [DONE] exudate_type/clip: best_val_macro_f1=0.0556  ckpt=runs\run_20260828_213304\checkpoints\mlp_clip_exudate_type.pth
+
+============================================================
+[HEAD] attr=erythema  backbone=clip  device=cuda
+       input_dim=768  hidden_dim=1024
+       epochs=150  DRW starts at epoch 90
+       cls_num_list=[188, 56, 0]
+============================================================
+  Epoch    1/150 [P1:Focal] loss=0.2891  val_macro_f1=0.3000  best=0.3000  elapsed=0s  no_improve=0
+  Epoch   10/150 [P1:Focal] loss=0.0205  val_macro_f1=0.5304  best=0.7667  elapsed=1s  no_improve=8
+  Epoch   20/150 [P1:Focal] loss=0.0084  val_macro_f1=0.7619  best=0.8589  elapsed=1s  no_improve=1
+  Epoch   30/150 [P1:Focal] loss=0.0000  val_macro_f1=0.7177  best=0.8589  elapsed=2s  no_improve=11
+  Epoch   40/150 [P1:Focal] loss=0.0000  val_macro_f1=0.7177  best=0.8589  elapsed=2s  no_improve=21
+  [EarlyStopping] Stopped at epoch 44 (patience=25)
+  [DONE] erythema/clip: best_val_macro_f1=0.8589  ckpt=runs\run_20260828_213304\checkpoints\mlp_clip_erythema.pth
+
+============================================================
+[HEAD] attr=edema  backbone=clip  device=cuda
+       input_dim=768  hidden_dim=1024
+       epochs=150  DRW starts at epoch 90
+       cls_num_list=[204, 40, 0]
+============================================================
+  Epoch    1/150 [P1:Focal] loss=0.4023  val_macro_f1=0.4697  best=0.4697  elapsed=0s  no_improve=0
+  Epoch   10/150 [P1:Focal] loss=0.0483  val_macro_f1=0.7177  best=0.7177  elapsed=1s  no_improve=0
+  Epoch   20/150 [P1:Focal] loss=0.0078  val_macro_f1=0.5766  best=0.7177  elapsed=1s  no_improve=10
+  Epoch   30/150 [P1:Focal] loss=0.0004  val_macro_f1=0.7321  best=0.7321  elapsed=2s  no_improve=0
+  Epoch   40/150 [P1:Focal] loss=0.0000  val_macro_f1=0.5766  best=0.7321  elapsed=2s  no_improve=10
+  Epoch   50/150 [P1:Focal] loss=0.0000  val_macro_f1=0.5766  best=0.7321  elapsed=3s  no_improve=20
+  [EarlyStopping] Stopped at epoch 55 (patience=25)
+  [DONE] edema/clip: best_val_macro_f1=0.7321  ckpt=runs\run_20260828_213304\checkpoints\mlp_clip_edema.pth
+
+============================================================
+[HEAD] attr=infection_risk  backbone=clip  device=cuda
+       input_dim=768  hidden_dim=1024
+       epochs=150  DRW starts at epoch 90
+       cls_num_list=[207, 32, 5]
+============================================================
+  Epoch    1/150 [P1:Focal] loss=0.2215  val_macro_f1=0.3230  best=0.3230  elapsed=0s  no_improve=0
+  Epoch   10/150 [P1:Focal] loss=0.0033  val_macro_f1=0.1571  best=0.3230  elapsed=1s  no_improve=9
+  Epoch   20/150 [P1:Focal] loss=0.0008  val_macro_f1=0.3222  best=0.3366  elapsed=1s  no_improve=2
+  Epoch   30/150 [P1:Focal] loss=0.0005  val_macro_f1=0.3814  best=0.3975  elapsed=2s  no_improve=2
+  Epoch   40/150 [P1:Focal] loss=0.0005  val_macro_f1=0.3975  best=0.4049  elapsed=2s  no_improve=4
+  Epoch   50/150 [P1:Focal] loss=0.0006  val_macro_f1=0.3975  best=0.4049  elapsed=3s  no_improve=14
+  Epoch   60/150 [P1:Focal] loss=0.0002  val_macro_f1=0.3492  best=0.4216  elapsed=4s  no_improve=8
+  Epoch   70/150 [P1:Focal] loss=0.0001  val_macro_f1=0.3492  best=0.4216  elapsed=4s  no_improve=18
+  [EarlyStopping] Stopped at epoch 77 (patience=25)
+  [DONE] infection_risk/clip: best_val_macro_f1=0.4216  ckpt=runs\run_20260828_213304\checkpoints\mlp_clip_infection_risk.pth
+
+============================================================
+[HEAD] attr=urgency_level  backbone=clip  device=cuda
+       input_dim=768  hidden_dim=512
+       epochs=150  DRW starts at epoch 90
+       cls_num_list=[216, 25, 3]
+============================================================
+  Epoch    1/150 [P1:Focal] loss=0.1323  val_macro_f1=0.0541  best=0.0541  elapsed=0s  no_improve=0
+  Epoch   10/150 [P1:Focal] loss=0.0061  val_macro_f1=0.0333  best=0.0773  elapsed=1s  no_improve=1
+  Epoch   20/150 [P1:Focal] loss=0.0004  val_macro_f1=0.1777  best=0.2641  elapsed=1s  no_improve=7
+  Epoch   30/150 [P1:Focal] loss=0.0002  val_macro_f1=0.2333  best=0.2641  elapsed=2s  no_improve=17
+  Epoch   40/150 [P1:Focal] loss=0.0002  val_macro_f1=0.4034  best=0.4034  elapsed=2s  no_improve=1
+  Epoch   50/150 [P1:Focal] loss=0.0002  val_macro_f1=0.3659  best=0.4034  elapsed=3s  no_improve=11
+  Epoch   60/150 [P1:Focal] loss=0.0001  val_macro_f1=0.4218  best=0.4582  elapsed=3s  no_improve=2
+  Epoch   70/150 [P1:Focal] loss=0.0001  val_macro_f1=0.5139  best=0.5139  elapsed=4s  no_improve=3
+  Epoch   80/150 [P1:Focal] loss=0.0001  val_macro_f1=0.5536  best=0.5536  elapsed=5s  no_improve=3
+  Epoch   90/150 [P1:Focal] loss=0.0001  val_macro_f1=0.4804  best=0.5536  elapsed=5s  no_improve=13
+  Epoch  100/150 [P2:LDAM] loss=0.0147  val_macro_f1=0.4776  best=0.6354  elapsed=6s  no_improve=7
+  Epoch  110/150 [P2:LDAM] loss=0.0150  val_macro_f1=0.4776  best=0.6354  elapsed=7s  no_improve=17
+  [EarlyStopping] Stopped at epoch 118 (patience=25)
+  [DONE] urgency_level/clip: best_val_macro_f1=0.6354  ckpt=runs\run_20260828_213304\checkpoints\mlp_clip_urgency_level.pth
+
+
+PIPELINE COMPLETE
+Elapsed: 17.2 min
+Mean Macro-F1 (test): 38.81%
+Exact Match Ratio: 0.00%

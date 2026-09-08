@@ -1,0 +1,26 @@
+{
+    "experiment_id": "v8_e1_full686_textproto",
+    "started_at": "2026-09-05T11:33:37.161631",
+    "hypothesis": "Single-scale BiomedCLIP + PubMedBERT Text Prototypes + Logit Adjustment trained on full 480-sample training set of the 686 dataset",
+    "config": {
+        "loss_strategy": "logit_adjusted",
+        "epochs": 80,
+        "lr": 3e-05,
+        "batch_size": 16,
+        "accum_steps": 2,
+        "effective_batch": 32,
+        "seed": 42,
+        "multiscale": false,
+        "use_text_prototypes": true,
+        "legacy_mode": true,
+        "dataset_csv": "data/annotations.csv",
+        "tau": 1.0,
+        "dropout": 0.25,
+        "use_sampler": false,
+        "crop_scale": 0.65,
+        "patience": 20,
+        "adaptive_tau": false,
+        "label_smoothing": 0.0,
+        "use_mixup": false
+    }
+}

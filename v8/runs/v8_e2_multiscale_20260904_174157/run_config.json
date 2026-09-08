@@ -1,0 +1,18 @@
+{
+    "experiment_id": "v8_e2_multiscale",
+    "started_at": "2026-09-04T17:41:57.321539",
+    "hypothesis": "Evaluation of v8 architecture",
+    "config": {
+        "loss_strategy": "logit_adjusted",
+        "epochs": 80,
+        "lr": 3e-05,
+        "batch_size": 16,
+        "accum_steps": 2,
+        "effective_batch": 32,
+        "seed": 42,
+        "multiscale": true,
+        "use_text_prototypes": true,
+        "legacy_mode": true,
+        "dataset_csv": "archive/dataset_backup_v7/annotations.csv"
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "experiment_id": "v8_e5_full686_adaptive_multiscale",
+    "started_at": "2026-09-05T10:17:35.135241",
+    "hypothesis": "Full 686-dataset training with MultiScale BiomedCLIP, Adaptive-Tau Logit Adjustment, and Balanced Sampler",
+    "config": {
+        "loss_strategy": "logit_adjusted",
+        "epochs": 80,
+        "lr": 3e-05,
+        "batch_size": 16,
+        "accum_steps": 2,
+        "effective_batch": 32,
+        "seed": 42,
+        "multiscale": true,
+        "use_text_prototypes": true,
+        "legacy_mode": true,
+        "dataset_csv": "data/annotations.csv",
+        "tau": 1.0,
+        "dropout": 0.35,
+        "use_sampler": true,
+        "crop_scale": 0.5,
+        "patience": 25,
+        "adaptive_tau": true
+    }
+}

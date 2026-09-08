@@ -1,0 +1,70 @@
+{
+    "dinov2": {
+        "location": {
+            "best_val_f1": 0.698941798941799,
+            "epochs_run": 41
+        },
+        "healing_status": {
+            "best_val_f1": 0.79,
+            "epochs_run": 45
+        },
+        "closure_method": {
+            "best_val_f1": 0.5944224857268335,
+            "epochs_run": 47
+        },
+        "exudate_type": {
+            "best_val_f1": 0.06,
+            "epochs_run": 50
+        },
+        "erythema": {
+            "best_val_f1": 0.65,
+            "epochs_run": 31
+        },
+        "edema": {
+            "best_val_f1": 0.8087431693989071,
+            "epochs_run": 47
+        },
+        "infection_risk": {
+            "best_val_f1": 0.6693657219973009,
+            "epochs_run": 92
+        },
+        "urgency_level": {
+            "best_val_f1": 0.6812386156648451,
+            "epochs_run": 145
+        }
+    },
+    "clip": {
+        "location": {
+            "best_val_f1": 0.7846014492753622,
+            "epochs_run": 51
+        },
+        "healing_status": {
+            "best_val_f1": 0.7822222222222222,
+            "epochs_run": 29
+        },
+        "closure_method": {
+            "best_val_f1": 0.23476190476190478,
+            "epochs_run": 45
+        },
+        "exudate_type": {
+            "best_val_f1": 0.05555555555555555,
+            "epochs_run": 28
+        },
+        "erythema": {
+            "best_val_f1": 0.8588709677419355,
+            "epochs_run": 44
+        },
+        "edema": {
+            "best_val_f1": 0.7321428571428572,
+            "epochs_run": 55
+        },
+        "infection_risk": {
+            "best_val_f1": 0.4216450216450216,
+            "epochs_run": 77
+        },
+        "urgency_level": {
+            "best_val_f1": 0.6354166666666666,
+            "epochs_run": 118
+        }
+    }
+}

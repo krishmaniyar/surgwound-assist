@@ -1,0 +1,3 @@
+SurgWound Pipeline v7.0 (BiomedCLIP) — 2026-08-29 12:57:31.065398
+Device: cuda
+

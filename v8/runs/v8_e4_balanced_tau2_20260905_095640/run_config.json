@@ -1,0 +1,24 @@
+{
+    "experiment_id": "v8_e4_balanced_tau2",
+    "started_at": "2026-09-05T09:56:40.504022",
+    "hypothesis": "Evaluation of v8 architecture",
+    "config": {
+        "loss_strategy": "logit_adjusted",
+        "epochs": 80,
+        "lr": 3e-05,
+        "batch_size": 16,
+        "accum_steps": 2,
+        "effective_batch": 32,
+        "seed": 42,
+        "multiscale": true,
+        "use_text_prototypes": true,
+        "legacy_mode": true,
+        "dataset_csv": "archive/dataset_backup_v7/annotations.csv",
+        "tau": 2.0,
+        "dropout": 0.4,
+        "use_sampler": true,
+        "crop_scale": 0.5,
+        "patience": 20,
+        "adaptive_tau": false
+    }
+}

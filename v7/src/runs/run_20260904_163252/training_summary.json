@@ -1,0 +1,5 @@
+{
+    "architecture": "BiomedCLIP-v7.0",
+    "best_val_mean_f1": 0.6142209468154821,
+    "epochs_run": 80
+}

@@ -1,0 +1,9 @@
+======================================================================
+SURGWOUND ASSIST V8 TRAINING — Strategy: LOGIT_ADJUSTED
+Device: cuda | Epochs: 3 | Batch: 16 | Accum: 2 | LR: 3.00e-05
+Multiscale: True | Text Prototypes: True | Legacy Mode: True | Seed: 42
+======================================================================
+  Epoch  1/3 [LOGIT_ADJUSTED] loss=5.3005  val_f1=0.2442  best=0.2442 *  lr=2.48e-05  elapsed=8s  no_improve=0
+  Epoch  2/3 [LOGIT_ADJUSTED] loss=5.0810  val_f1=0.2760  best=0.2760 *  lr=8.77e-06  elapsed=16s  no_improve=0
+  Epoch  3/3 [LOGIT_ADJUSTED] loss=4.8775  val_f1=0.2908  best=0.2908 *  lr=3.00e-12  elapsed=23s  no_improve=0
+[train] Best model checkpoint saved -> v8/runs\v8_multiscale_pilot_20260904_173939\checkpoints\best_model.pth (val_macro_f1=0.2908)

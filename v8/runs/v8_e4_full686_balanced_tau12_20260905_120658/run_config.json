@@ -1,0 +1,26 @@
+{
+    "experiment_id": "v8_e4_full686_balanced_tau12",
+    "started_at": "2026-09-05T12:06:58.756555",
+    "hypothesis": "Balanced Random Sampler + Tau=1.2 Logit-Adjusted Loss trained on full 480-sample training set of the 686 dataset",
+    "config": {
+        "loss_strategy": "logit_adjusted",
+        "epochs": 80,
+        "lr": 3e-05,
+        "batch_size": 16,
+        "accum_steps": 2,
+        "effective_batch": 32,
+        "seed": 42,
+        "multiscale": true,
+        "use_text_prototypes": true,
+        "legacy_mode": true,
+        "dataset_csv": "data/annotations.csv",
+        "tau": 1.2,
+        "dropout": 0.25,
+        "use_sampler": true,
+        "crop_scale": 0.65,
+        "patience": 20,
+        "adaptive_tau": false,
+        "label_smoothing": 0.0,
+        "use_mixup": false
+    }
+}

@@ -1,0 +1,94 @@
+SurgWound Pipeline v7.6 (BiomedCLIP) — 2026-09-04 16:51:11.594879
+Device: cuda
+
+
+============================================================
+v7.5 — BiomedCLIP + LDAM Margin Warm-Restart + Full Base Paper Metrics
+Model: hf-hub:microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224
+Epochs: 80 | Batch: 16 | Accum: 2 | LR: 3e-05 | Seed: 42
+Warmup: 120/1200 steps | LDAM starts: epoch 56
+============================================================
+  Epoch  1/80 [P1:Focal] loss=1.9291  val_f1=0.1718  best=0.1718  lr=3.75e-06  elapsed=12s  no_improve=0
+  Epoch  2/80 [P1:Focal] loss=1.9107  val_f1=0.1713  best=0.1718  lr=7.50e-06  elapsed=23s  no_improve=1
+  Epoch  3/80 [P1:Focal] loss=1.8636  val_f1=0.1379  best=0.1718  lr=1.13e-05  elapsed=32s  no_improve=2
+  Epoch  4/80 [P1:Focal] loss=1.8210  val_f1=0.1182  best=0.1718  lr=1.50e-05  elapsed=42s  no_improve=3
+  Epoch  5/80 [P1:Focal] loss=1.7659  val_f1=0.1161  best=0.1718  lr=1.88e-05  elapsed=52s  no_improve=4
+  Epoch  6/80 [P1:Focal] loss=1.7077  val_f1=0.1144  best=0.1718  lr=2.25e-05  elapsed=61s  no_improve=5
+  Epoch  7/80 [P1:Focal] loss=1.6373  val_f1=0.1289  best=0.1718  lr=2.63e-05  elapsed=71s  no_improve=6
+  Epoch  8/80 [P1:Focal] loss=1.5739  val_f1=0.1487  best=0.1718  lr=3.00e-05  elapsed=81s  no_improve=7
+  Epoch  9/80 [P1:Focal] loss=1.4938  val_f1=0.1746  best=0.1746  lr=3.00e-05  elapsed=91s  no_improve=0
+  Epoch 10/80 [P1:Focal] loss=1.3973  val_f1=0.1864  best=0.1864  lr=2.99e-05  elapsed=100s  no_improve=0
+  Epoch 11/80 [P1:Focal] loss=1.3137  val_f1=0.1900  best=0.1900  lr=2.99e-05  elapsed=110s  no_improve=0
+  Epoch 12/80 [P1:Focal] loss=1.2011  val_f1=0.1983  best=0.1983  lr=2.98e-05  elapsed=120s  no_improve=0
+  Epoch 13/80 [P1:Focal] loss=1.1093  val_f1=0.2001  best=0.2001  lr=2.96e-05  elapsed=130s  no_improve=0
+  Epoch 14/80 [P1:Focal] loss=1.0009  val_f1=0.2011  best=0.2011  lr=2.95e-05  elapsed=140s  no_improve=0
+  Epoch 15/80 [P1:Focal] loss=0.9047  val_f1=0.2048  best=0.2048  lr=2.93e-05  elapsed=150s  no_improve=0
+  Epoch 16/80 [P1:Focal] loss=0.8122  val_f1=0.2114  best=0.2114  lr=2.91e-05  elapsed=160s  no_improve=0
+  Epoch 17/80 [P1:Focal] loss=0.7151  val_f1=0.2193  best=0.2193  lr=2.89e-05  elapsed=170s  no_improve=0
+  Epoch 18/80 [P1:Focal] loss=0.6340  val_f1=0.2262  best=0.2262  lr=2.86e-05  elapsed=179s  no_improve=0
+  Epoch 19/80 [P1:Focal] loss=0.5722  val_f1=0.2361  best=0.2361  lr=2.83e-05  elapsed=189s  no_improve=0
+  Epoch 20/80 [P1:Focal] loss=0.5122  val_f1=0.2346  best=0.2361  lr=2.80e-05  elapsed=199s  no_improve=1
+  Epoch 21/80 [P1:Focal] loss=0.4454  val_f1=0.2376  best=0.2376  lr=2.77e-05  elapsed=209s  no_improve=0
+  Epoch 22/80 [P1:Focal] loss=0.3920  val_f1=0.2363  best=0.2376  lr=2.73e-05  elapsed=219s  no_improve=1
+  Epoch 23/80 [P1:Focal] loss=0.3439  val_f1=0.2503  best=0.2503  lr=2.69e-05  elapsed=229s  no_improve=0
+  Epoch 24/80 [P1:Focal] loss=0.3044  val_f1=0.2528  best=0.2528  lr=2.65e-05  elapsed=239s  no_improve=0
+  Epoch 25/80 [P1:Focal] loss=0.2713  val_f1=0.2710  best=0.2710  lr=2.61e-05  elapsed=249s  no_improve=0
+  Epoch 26/80 [P1:Focal] loss=0.2389  val_f1=0.2809  best=0.2809  lr=2.56e-05  elapsed=259s  no_improve=0
+  Epoch 27/80 [P1:Focal] loss=0.2081  val_f1=0.2852  best=0.2852  lr=2.51e-05  elapsed=269s  no_improve=0
+  Epoch 28/80 [P1:Focal] loss=0.1857  val_f1=0.2942  best=0.2942  lr=2.46e-05  elapsed=279s  no_improve=0
+  Epoch 29/80 [P1:Focal] loss=0.1692  val_f1=0.2995  best=0.2995  lr=2.41e-05  elapsed=289s  no_improve=0
+  Epoch 30/80 [P1:Focal] loss=0.1464  val_f1=0.3081  best=0.3081  lr=2.36e-05  elapsed=299s  no_improve=0
+  Epoch 31/80 [P1:Focal] loss=0.1297  val_f1=0.3088  best=0.3088  lr=2.31e-05  elapsed=309s  no_improve=0
+  Epoch 32/80 [P1:Focal] loss=0.1211  val_f1=0.2940  best=0.3088  lr=2.25e-05  elapsed=319s  no_improve=1
+  Epoch 33/80 [P1:Focal] loss=0.1059  val_f1=0.3243  best=0.3243  lr=2.19e-05  elapsed=329s  no_improve=0
+  Epoch 34/80 [P1:Focal] loss=0.0898  val_f1=0.3246  best=0.3246  lr=2.13e-05  elapsed=340s  no_improve=0
+  Epoch 35/80 [P1:Focal] loss=0.0834  val_f1=0.3171  best=0.3246  lr=2.07e-05  elapsed=350s  no_improve=1
+  Epoch 36/80 [P1:Focal] loss=0.0755  val_f1=0.3302  best=0.3302  lr=2.01e-05  elapsed=360s  no_improve=0
+  Epoch 37/80 [P1:Focal] loss=0.0674  val_f1=0.3209  best=0.3302  lr=1.95e-05  elapsed=370s  no_improve=1
+  Epoch 38/80 [P1:Focal] loss=0.0602  val_f1=0.3302  best=0.3302  lr=1.89e-05  elapsed=380s  no_improve=2
+  Epoch 39/80 [P1:Focal] loss=0.0540  val_f1=0.3317  best=0.3317  lr=1.82e-05  elapsed=390s  no_improve=0
+  Epoch 40/80 [P1:Focal] loss=0.0503  val_f1=0.3392  best=0.3392  lr=1.76e-05  elapsed=399s  no_improve=0
+  Epoch 41/80 [P1:Focal] loss=0.0474  val_f1=0.3438  best=0.3438  lr=1.70e-05  elapsed=409s  no_improve=0
+  Epoch 42/80 [P1:Focal] loss=0.0416  val_f1=0.3500  best=0.3500  lr=1.63e-05  elapsed=419s  no_improve=0
+  Epoch 43/80 [P1:Focal] loss=0.0408  val_f1=0.3603  best=0.3603  lr=1.57e-05  elapsed=429s  no_improve=0
+  Epoch 44/80 [P1:Focal] loss=0.0379  val_f1=0.3628  best=0.3628  lr=1.50e-05  elapsed=439s  no_improve=0
+  Epoch 45/80 [P1:Focal] loss=0.0336  val_f1=0.3753  best=0.3753  lr=1.43e-05  elapsed=449s  no_improve=0
+  Epoch 46/80 [P1:Focal] loss=0.0314  val_f1=0.3795  best=0.3795  lr=1.37e-05  elapsed=459s  no_improve=0
+  Epoch 47/80 [P1:Focal] loss=0.0294  val_f1=0.3968  best=0.3968  lr=1.30e-05  elapsed=469s  no_improve=0
+  Epoch 48/80 [P1:Focal] loss=0.0279  val_f1=0.3928  best=0.3968  lr=1.24e-05  elapsed=478s  no_improve=1
+  Epoch 49/80 [P1:Focal] loss=0.0249  val_f1=0.3981  best=0.3981  lr=1.18e-05  elapsed=488s  no_improve=0
+  Epoch 50/80 [P1:Focal] loss=0.0246  val_f1=0.4014  best=0.4014  lr=1.11e-05  elapsed=498s  no_improve=0
+  Epoch 51/80 [P1:Focal] loss=0.0231  val_f1=0.4008  best=0.4014  lr=1.05e-05  elapsed=508s  no_improve=1
+  Epoch 52/80 [P1:Focal] loss=0.0216  val_f1=0.4035  best=0.4035  lr=9.87e-06  elapsed=518s  no_improve=0
+  Epoch 53/80 [P1:Focal] loss=0.0207  val_f1=0.4017  best=0.4035  lr=9.26e-06  elapsed=528s  no_improve=1
+  Epoch 54/80 [P1:Focal] loss=0.0204  val_f1=0.4079  best=0.4079  lr=8.66e-06  elapsed=538s  no_improve=0
+  Epoch 55/80 [P1:Focal] loss=0.0185  val_f1=0.4090  best=0.4090  lr=8.07e-06  elapsed=548s  no_improve=0
+  Epoch 56/80 [P1:Focal] loss=0.0188  val_f1=0.4011  best=0.4090  lr=7.50e-06  elapsed=558s  no_improve=1
+
+>>> [Phase 2: LDAM Warm-Restart] LR reset to 1.0e-05 with 360 steps cosine decay <<<
+
+  Epoch 57/80 [P2:LDAM] loss=24.8147  val_f1=0.4700  best=0.4700  lr=2.50e-05  elapsed=574s  no_improve=0
+  Epoch 58/80 [P2:LDAM] loss=17.0396  val_f1=0.4600  best=0.4700  lr=2.99e-05  elapsed=589s  no_improve=1
+  Epoch 59/80 [P2:LDAM] loss=14.2329  val_f1=0.4739  best=0.4739  lr=2.95e-05  elapsed=604s  no_improve=0
+  Epoch 60/80 [P2:LDAM] loss=8.8750  val_f1=0.4444  best=0.4739  lr=2.89e-05  elapsed=619s  no_improve=1
+  Epoch 61/80 [P2:LDAM] loss=5.5560  val_f1=0.4680  best=0.4739  lr=2.80e-05  elapsed=635s  no_improve=2
+  Epoch 62/80 [P2:LDAM] loss=4.4525  val_f1=0.4657  best=0.4739  lr=2.68e-05  elapsed=650s  no_improve=3
+  Epoch 63/80 [P2:LDAM] loss=3.2817  val_f1=0.4609  best=0.4739  lr=2.55e-05  elapsed=665s  no_improve=4
+  Epoch 64/80 [P2:LDAM] loss=2.2862  val_f1=0.4465  best=0.4739  lr=2.39e-05  elapsed=681s  no_improve=5
+  Epoch 65/80 [P2:LDAM] loss=1.7567  val_f1=0.4480  best=0.4739  lr=2.21e-05  elapsed=696s  no_improve=6
+  Epoch 66/80 [P2:LDAM] loss=1.1300  val_f1=0.4697  best=0.4739  lr=2.03e-05  elapsed=711s  no_improve=7
+  Epoch 67/80 [P2:LDAM] loss=0.4949  val_f1=0.4599  best=0.4739  lr=1.83e-05  elapsed=726s  no_improve=8
+  Epoch 68/80 [P2:LDAM] loss=0.7517  val_f1=0.4530  best=0.4739  lr=1.62e-05  elapsed=741s  no_improve=9
+  Epoch 69/80 [P2:LDAM] loss=0.5260  val_f1=0.4627  best=0.4739  lr=1.42e-05  elapsed=758s  no_improve=10
+  Epoch 70/80 [P2:LDAM] loss=0.3344  val_f1=0.4678  best=0.4739  lr=1.21e-05  elapsed=773s  no_improve=11
+  Epoch 71/80 [P2:LDAM] loss=0.2203  val_f1=0.4622  best=0.4739  lr=1.01e-05  elapsed=788s  no_improve=12
+  Epoch 72/80 [P2:LDAM] loss=0.1168  val_f1=0.4649  best=0.4739  lr=8.23e-06  elapsed=804s  no_improve=13
+  Epoch 73/80 [P2:LDAM] loss=0.1938  val_f1=0.4572  best=0.4739  lr=6.45e-06  elapsed=819s  no_improve=14
+  Epoch 74/80 [P2:LDAM] loss=0.0726  val_f1=0.4589  best=0.4739  lr=4.84e-06  elapsed=835s  no_improve=15
+  Epoch 75/80 [P2:LDAM] loss=0.0934  val_f1=0.4672  best=0.4739  lr=3.42e-06  elapsed=851s  no_improve=16
+  Epoch 76/80 [P2:LDAM] loss=0.0528  val_f1=0.4718  best=0.4739  lr=2.22e-06  elapsed=869s  no_improve=17
+  Epoch 77/80 [P2:LDAM] loss=0.0474  val_f1=0.4690  best=0.4739  lr=1.26e-06  elapsed=886s  no_improve=18
+  Epoch 78/80 [P2:LDAM] loss=0.0386  val_f1=0.4731  best=0.4739  lr=5.66e-07  elapsed=902s  no_improve=19
+  Epoch 79/80 [P2:LDAM] loss=0.0520  val_f1=0.4731  best=0.4739  lr=1.42e-07  elapsed=918s  no_improve=20
+  [EarlyStopping] Stopped at epoch 79 (patience=20)
+  [DONE] best_val_f1=0.4739  ckpt=runs\run_20260904_165111\checkpoints\biomedclip_model.pth

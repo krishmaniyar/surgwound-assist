@@ -1,0 +1,41 @@
+SurgWound Pipeline v7.1 (BiomedCLIP) — 2026-08-29 17:02:05.949135
+Device: cuda
+
+
+============================================================
+v7.0 — BiomedCLIP (Medical Domain) + LLRD + Warmup
+Model: hf-hub:microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224
+Epochs: 100 | Batch: 16 | Accum: 4 | LR: 1e-05 | Seed: 42
+Warmup: 40/400 steps | LDAM starts: epoch 70
+============================================================
+  Epoch  1/100 [P1:Focal] loss=2.4203  val_f1=0.1566  best=0.1566  lr=1.00e-06  elapsed=7s  no_improve=0
+  Epoch  2/100 [P1:Focal] loss=2.4619  val_f1=0.1576  best=0.1576  lr=2.00e-06  elapsed=12s  no_improve=0
+  Epoch  3/100 [P1:Focal] loss=2.4414  val_f1=0.1512  best=0.1576  lr=3.00e-06  elapsed=17s  no_improve=1
+  Epoch  4/100 [P1:Focal] loss=2.4458  val_f1=0.1548  best=0.1576  lr=4.00e-06  elapsed=22s  no_improve=2
+  Epoch  5/100 [P1:Focal] loss=2.4179  val_f1=0.1544  best=0.1576  lr=5.00e-06  elapsed=28s  no_improve=3
+  Epoch  6/100 [P1:Focal] loss=2.4085  val_f1=0.1518  best=0.1576  lr=6.00e-06  elapsed=33s  no_improve=4
+  Epoch  7/100 [P1:Focal] loss=2.3580  val_f1=0.1579  best=0.1579  lr=7.00e-06  elapsed=38s  no_improve=0
+  Epoch  8/100 [P1:Focal] loss=2.3081  val_f1=0.2416  best=0.2416  lr=8.00e-06  elapsed=43s  no_improve=0
+  Epoch  9/100 [P1:Focal] loss=2.2558  val_f1=0.2532  best=0.2532  lr=9.00e-06  elapsed=49s  no_improve=0
+  Epoch 10/100 [P1:Focal] loss=2.2305  val_f1=0.2506  best=0.2532  lr=1.00e-05  elapsed=54s  no_improve=1
+  Epoch 11/100 [P1:Focal] loss=2.2052  val_f1=0.2518  best=0.2532  lr=1.00e-05  elapsed=59s  no_improve=2
+  Epoch 12/100 [P1:Focal] loss=2.1814  val_f1=0.2397  best=0.2532  lr=9.99e-06  elapsed=64s  no_improve=3
+  Epoch 13/100 [P1:Focal] loss=2.1112  val_f1=0.2245  best=0.2532  lr=9.97e-06  elapsed=70s  no_improve=4
+  Epoch 14/100 [P1:Focal] loss=2.2218  val_f1=0.2111  best=0.2532  lr=9.95e-06  elapsed=75s  no_improve=5
+  Epoch 15/100 [P1:Focal] loss=1.9908  val_f1=0.2146  best=0.2532  lr=9.92e-06  elapsed=80s  no_improve=6
+  Epoch 16/100 [P1:Focal] loss=1.9664  val_f1=0.2185  best=0.2532  lr=9.89e-06  elapsed=86s  no_improve=7
+  Epoch 17/100 [P1:Focal] loss=1.9385  val_f1=0.2105  best=0.2532  lr=9.85e-06  elapsed=91s  no_improve=8
+  Epoch 18/100 [P1:Focal] loss=1.9339  val_f1=0.1934  best=0.2532  lr=9.81e-06  elapsed=97s  no_improve=9
+  Epoch 19/100 [P1:Focal] loss=1.9339  val_f1=0.1934  best=0.2532  lr=9.76e-06  elapsed=103s  no_improve=10
+  Epoch 20/100 [P1:Focal] loss=1.8738  val_f1=0.1934  best=0.2532  lr=9.70e-06  elapsed=109s  no_improve=11
+  Epoch 21/100 [P1:Focal] loss=1.7836  val_f1=0.1996  best=0.2532  lr=9.64e-06  elapsed=115s  no_improve=12
+  Epoch 22/100 [P1:Focal] loss=1.7740  val_f1=0.2096  best=0.2532  lr=9.57e-06  elapsed=121s  no_improve=13
+  Epoch 23/100 [P1:Focal] loss=1.7769  val_f1=0.2065  best=0.2532  lr=9.49e-06  elapsed=127s  no_improve=14
+  Epoch 24/100 [P1:Focal] loss=1.6965  val_f1=0.2095  best=0.2532  lr=9.41e-06  elapsed=133s  no_improve=15
+  Epoch 25/100 [P1:Focal] loss=1.7673  val_f1=0.2095  best=0.2532  lr=9.33e-06  elapsed=139s  no_improve=16
+  Epoch 26/100 [P1:Focal] loss=1.7238  val_f1=0.2112  best=0.2532  lr=9.24e-06  elapsed=145s  no_improve=17
+  Epoch 27/100 [P1:Focal] loss=1.6421  val_f1=0.2111  best=0.2532  lr=9.15e-06  elapsed=151s  no_improve=18
+  Epoch 28/100 [P1:Focal] loss=1.6967  val_f1=0.2112  best=0.2532  lr=9.05e-06  elapsed=157s  no_improve=19
+  Epoch 29/100 [P1:Focal] loss=1.6087  val_f1=0.2112  best=0.2532  lr=8.94e-06  elapsed=164s  no_improve=20
+  [EarlyStopping] Stopped at epoch 29 (patience=20)
+  [DONE] best_val_f1=0.2532  ckpt=runs\run_20260829_170207\checkpoints\biomedclip_model.pth

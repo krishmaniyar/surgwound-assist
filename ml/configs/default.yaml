@@ -1,0 +1,29 @@
+# default.yaml
+project_name: "surgwound-multi-task"
+run_name: "effnetv2_s_baseline"
+
+data:
+  images_dir: "data/images"
+  annotations_path: "data/annotations.csv"
+  img_size: 224
+
+model:
+  backbone: "tf_efficientnetv2_s" # Options: tf_efficientnetv2_s, resnet50
+  pretrained: true
+  embedding_dim: 512
+
+training:
+  batch_size: 16
+  epochs: 50
+  warmup_epochs: 5 # Epochs to train only the heads
+  lr_head: 1e-3
+  lr_backbone: 1e-4 # Used after warmup
+  weight_decay: 1e-4
+  early_stopping_patience: 10
+  seed: 42
+
+loss:
+  # Base weights computed from data, these are multipliers
+  infection_risk_high_penalty: 5.0
+  urgency_emergency_penalty: 5.0
+  use_focal_loss: false # Toggle focal loss for hard classes

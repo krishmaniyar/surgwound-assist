@@ -1,0 +1,116 @@
+# SurgWound Assist v7.5 Reproducible Baseline Configuration
+# Used to reproduce and benchmark against the official v7.5 results (51.10% Test Macro-F1)
+
+version: "v7.5"
+description: "BiomedCLIP + LLRD + Focal Phase 1 + LDAM Phase 2 with Warm Restart + 7x TTA"
+
+data:
+  dataset_csv: "archive/dataset_backup_v7/annotations.csv" # 349 images (244 train / 35 val / 70 test)
+  image_dir: "data/images"
+  num_samples: 349
+  splits:
+    train: 244
+    val: 35
+    test: 70
+  attributes:
+    - location
+    - healing_status
+    - closure_method
+    - exudate_type
+    - erythema
+    - edema
+    - infection_risk
+    - urgency_level
+
+backbone:
+  model_id: "hf-hub:microsoft/BiomedCLIP-PubMedBERT_256-vit_base_patch16_224"
+  architecture: "ViT-B/16"
+  pretrained_weights: "PubMed Central 15M"
+  output_dim: 512
+  freeze_backbone: false
+
+preprocessing:
+  image_size: [224, 224]
+  mean: [0.4815, 0.4578, 0.4082]
+  std: [0.2686, 0.2613, 0.2758]
+  train_transforms: "BiomedCLIP default preprocess_train"
+  val_transforms: "BiomedCLIP default preprocess_val"
+
+seed:
+  random_seed: 42
+  deterministic_cudnn: true
+  seed_worker: true
+
+classifier:
+  head_type: "2-layer MLP"
+  hidden_dim: 256
+  activation: "GELU"
+  dropout: 0.25
+  norm: "LayerNorm(512)"
+  weight_init_std: 0.02
+  bias_init: 0.0
+
+optimizer:
+  type: "AdamW"
+  base_lr: 3.0e-5
+  weight_decay: 1.0e-3
+  llrd:
+    enabled: true
+    decay_rate: 0.85
+    head_lr: 3.0e-5
+    depth_decay_formula: "base_lr * (0.85 ** depth)"
+    embedding_decay: "base_lr * (0.85 ** 13)"
+
+scheduler:
+  type: "cosine_with_linear_warmup"
+  warmup_ratio: 0.1 # 64 steps
+  min_lr: 1.0e-7
+
+training:
+  epochs: 80
+  batch_size: 16
+  accum_steps: 2 # Effective batch size = 32
+  early_stopping_patience: 20
+  amp_behavior:
+    phase_1_amp: true
+    phase_2_amp: false # Conditionally disabled during LDAM to prevent GradScaler overflow
+
+loss:
+  strategy: "Deferred Re-Weighting (DRW)"
+  drw_transition_epoch: 56 # 70% of 80 epochs
+  phase_1:
+    loss_type: "FocalLoss"
+    gamma: 2.0
+    class_weighting: "Effective Number of Samples (beta=0.9999)"
+  phase_2:
+    loss_type: "LDAMLoss"
+    max_m: 0.5
+    s: 15
+    class_weighting: "Effective Number of Samples (beta=0.9999)"
+    warm_restart:
+      enabled: true
+      restart_lr: 1.0e-5
+      decay_steps: 192
+      reset_early_stopping: true
+
+inference:
+  tta:
+    enabled: true
+    num_passes: 7
+    transforms:
+      - "RandomResizedCrop(224, scale=(0.85, 1.0))"
+      - "RandomHorizontalFlip()"
+      - "ColorJitter(brightness=0.05, contrast=0.05)"
+    aggregation: "probability_averaging"
+  decision_rule: "argmax"
+
+metrics:
+  primary: "Mean Macro-F1 across 8 attributes"
+  expected_v7_5_baseline:
+    val_macro_f1: 0.6142
+    test_macro_f1_tta: 0.5110
+    test_mean_accuracy: 0.7750
+    test_mean_precision: 0.5065
+    test_mean_recall: 0.5212
+    test_mean_weighted_f1: 0.7504
+    test_exact_match_ratio: 0.1429

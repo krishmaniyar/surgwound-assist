@@ -1,0 +1,4 @@
+SurgWound Pipeline — 2026-08-28 21:15:32.183014
+Device: cuda
+Backbones: DINOv2=facebook/dinov2-base (768d), CLIP=ViT-L-14/laion2b_s32b_b82k (768d)
+

@@ -1,0 +1,533 @@
+{
+    "aggregate": {
+        "exact_match_ratio": 0.2571428571428571,
+        "hamming_loss": 0.18571428571428572,
+        "mean_macro_f1": 0.5194887568699715
+    },
+    "per_head": {
+        "location": {
+            "accuracy": 0.7142857142857143,
+            "macro_precision": 0.5442038066179943,
+            "macro_recall": 0.553113553113553,
+            "macro_f1": 0.543708919667999,
+            "weighted_precision": 0.6867628309905198,
+            "weighted_recall": 0.7142857142857143,
+            "weighted_f1": 0.6938176060938208,
+            "roc_auc": NaN,
+            "cohen_kappa": 0.6378685980341439,
+            "ece": 0.17324449121952057,
+            "confusion_matrix": [
+                [
+                    14,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    1,
+                    7,
+                    0,
+                    0,
+                    0,
+                    0,
+                    5,
+                    0
+                ],
+                [
+                    0,
+                    1,
+                    7,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0,
+                    8,
+                    0,
+                    1,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    2,
+                    0
+                ],
+                [
+                    1,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0
+                ],
+                [
+                    3,
+                    2,
+                    1,
+                    1,
+                    0,
+                    0,
+                    14,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            "per_class": {
+                "Abdomen": {
+                    "support": 14.0,
+                    "sensitivity": 1.0,
+                    "specificity": 0.6428571428571429
+                },
+                "Patella": {
+                    "support": 13.0,
+                    "sensitivity": 0.5384615384615384,
+                    "specificity": 0.7543859649122807
+                },
+                "Ankle": {
+                    "support": 9.0,
+                    "sensitivity": 0.7777777777777778,
+                    "specificity": 0.7049180327868853
+                },
+                "Facial region": {
+                    "support": 9.0,
+                    "sensitivity": 0.8888888888888888,
+                    "specificity": 0.6885245901639344
+                },
+                "Manus": {
+                    "support": 2.0,
+                    "sensitivity": 0.0,
+                    "specificity": 0.7352941176470589
+                },
+                "Cervical region": {
+                    "support": 2.0,
+                    "sensitivity": 0.0,
+                    "specificity": 0.7352941176470589
+                },
+                "Other": {
+                    "support": 21.0,
+                    "sensitivity": 0.6666666666666666,
+                    "specificity": 0.7346938775510204
+                },
+                "Uncertain": {
+                    "support": 0,
+                    "sensitivity": 0.0,
+                    "specificity": 0.7142857142857143
+                }
+            }
+        },
+        "healing_status": {
+            "accuracy": 0.7714285714285715,
+            "macro_precision": 0.7770897832817337,
+            "macro_recall": 0.7312661498708011,
+            "macro_f1": 0.7409805735430157,
+            "weighted_precision": 0.7742591773551526,
+            "weighted_recall": 0.7714285714285715,
+            "weighted_f1": 0.7612792388000529,
+            "roc_auc": 0.8010335917312662,
+            "cohen_kappa": 0.4895168641750227,
+            "ece": 0.19689613580703735,
+            "confusion_matrix": [
+                [
+                    39,
+                    4
+                ],
+                [
+                    12,
+                    15
+                ]
+            ],
+            "per_class": {
+                "Healed": {
+                    "support": 43.0,
+                    "sensitivity": 0.9069767441860465,
+                    "specificity": 0.5555555555555556
+                },
+                "Not Healed": {
+                    "support": 27.0,
+                    "sensitivity": 0.5555555555555556,
+                    "specificity": 0.9069767441860465
+                }
+            }
+        },
+        "closure_method": {
+            "accuracy": 0.6857142857142857,
+            "macro_precision": 0.3492063492063492,
+            "macro_recall": 0.30833333333333335,
+            "macro_f1": 0.29907407407407405,
+            "weighted_precision": 0.6224489795918368,
+            "weighted_recall": 0.6857142857142857,
+            "weighted_f1": 0.6147619047619048,
+            "roc_auc": NaN,
+            "cohen_kappa": 0.20577617328519848,
+            "ece": 0.21066710352897644,
+            "confusion_matrix": [
+                [
+                    5,
+                    13,
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    2,
+                    43,
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    2,
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    5,
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            "per_class": {
+                "Invisible": {
+                    "support": 18.0,
+                    "sensitivity": 0.2777777777777778,
+                    "specificity": 0.8269230769230769
+                },
+                "Sutures": {
+                    "support": 45.0,
+                    "sensitivity": 0.9555555555555556,
+                    "specificity": 0.2
+                },
+                "Staples": {
+                    "support": 2.0,
+                    "sensitivity": 0.0,
+                    "specificity": 0.7058823529411765
+                },
+                "Adhesives": {
+                    "support": 5.0,
+                    "sensitivity": 0.0,
+                    "specificity": 0.7384615384615385
+                },
+                "Uncertain": {
+                    "support": 0,
+                    "sensitivity": 0.0,
+                    "specificity": 0.6857142857142857
+                }
+            }
+        },
+        "exudate_type": {
+            "accuracy": 0.9,
+            "macro_precision": 0.38235294117647056,
+            "macro_recall": 0.39682539682539686,
+            "macro_f1": 0.3893129770992366,
+            "weighted_precision": 0.8348739495798319,
+            "weighted_recall": 0.9,
+            "weighted_f1": 0.8661941112322792,
+            "roc_auc": NaN,
+            "cohen_kappa": 0.20065252854812388,
+            "ece": 0.0701366662979126,
+            "confusion_matrix": [
+                [
+                    62,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0
+                ],
+                [
+                    2,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    2,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0
+                ],
+                [
+                    2,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            "per_class": {
+                "Non-existent": {
+                    "support": 63.0,
+                    "sensitivity": 0.9841269841269841,
+                    "specificity": 0.14285714285714285
+                },
+                "Serous": {
+                    "support": 2.0,
+                    "sensitivity": 0.0,
+                    "specificity": 0.9264705882352942
+                },
+                "Sanguineous": {
+                    "support": 2.0,
+                    "sensitivity": 0.0,
+                    "specificity": 0.9264705882352942
+                },
+                "Purulent": {
+                    "support": 1.0,
+                    "sensitivity": 1.0,
+                    "specificity": 0.8985507246376812
+                },
+                "Seropurulent": {
+                    "support": 2.0,
+                    "sensitivity": 0.0,
+                    "specificity": 0.9264705882352942
+                },
+                "Uncertain": {
+                    "support": 0,
+                    "sensitivity": 0.0,
+                    "specificity": 0.9
+                }
+            }
+        },
+        "erythema": {
+            "accuracy": 0.8285714285714286,
+            "macro_precision": 0.45384615384615384,
+            "macro_recall": 0.37699024139702103,
+            "macro_f1": 0.3899641577060932,
+            "weighted_precision": 0.8047252747252748,
+            "weighted_recall": 0.8285714285714286,
+            "weighted_f1": 0.803195084485407,
+            "roc_auc": NaN,
+            "cohen_kappa": 0.17727717923604303,
+            "ece": 0.1315004527568817,
+            "confusion_matrix": [
+                [
+                    56,
+                    2,
+                    1
+                ],
+                [
+                    9,
+                    2,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            "per_class": {
+                "Non-existent": {
+                    "support": 59.0,
+                    "sensitivity": 0.9491525423728814,
+                    "specificity": 0.18181818181818182
+                },
+                "Existent": {
+                    "support": 11.0,
+                    "sensitivity": 0.18181818181818182,
+                    "specificity": 0.9491525423728814
+                },
+                "Uncertain": {
+                    "support": 0.0,
+                    "sensitivity": 0.0,
+                    "specificity": 0.8285714285714286
+                }
+            }
+        },
+        "edema": {
+            "accuracy": 0.7857142857142857,
+            "macro_precision": 0.40441176470588236,
+            "macro_recall": 0.4824561403508772,
+            "macro_f1": 0.44,
+            "weighted_precision": 0.6586134453781513,
+            "weighted_recall": 0.7857142857142857,
+            "weighted_f1": 0.7165714285714286,
+            "roc_auc": NaN,
+            "cohen_kappa": -0.05210420841683372,
+            "ece": 0.15423983335494995,
+            "confusion_matrix": [
+                [
+                    55,
+                    2,
+                    0
+                ],
+                [
+                    13,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            "per_class": {
+                "Non-existent": {
+                    "support": 57.0,
+                    "sensitivity": 0.9649122807017544,
+                    "specificity": 0.0
+                },
+                "Existent": {
+                    "support": 13.0,
+                    "sensitivity": 0.0,
+                    "specificity": 0.9649122807017544
+                },
+                "Uncertain": {
+                    "support": 0,
+                    "sensitivity": 0.0,
+                    "specificity": 0.7857142857142857
+                }
+            }
+        },
+        "infection_risk": {
+            "accuracy": 0.8285714285714286,
+            "macro_precision": 0.6086956521739131,
+            "macro_recall": 0.3611111111111111,
+            "macro_f1": 0.3528693528693529,
+            "weighted_precision": 0.8440993788819876,
+            "weighted_recall": 0.8285714285714286,
+            "weighted_f1": 0.7631083202511774,
+            "roc_auc": 0.7616771067907342,
+            "cohen_kappa": 0.12041884816753934,
+            "ece": 0.15246008336544037,
+            "confusion_matrix": [
+                [
+                    57,
+                    0,
+                    0
+                ],
+                [
+                    11,
+                    1,
+                    0
+                ],
+                [
+                    1,
+                    0,
+                    0
+                ]
+            ],
+            "per_class": {
+                "Low": {
+                    "support": 57.0,
+                    "sensitivity": 1.0,
+                    "specificity": 0.07692307692307693
+                },
+                "Medium": {
+                    "support": 12.0,
+                    "sensitivity": 0.08333333333333333,
+                    "specificity": 0.9827586206896551
+                },
+                "High": {
+                    "support": 1.0,
+                    "sensitivity": 0.0,
+                    "specificity": 0.8405797101449275
+                }
+            }
+        },
+        "urgency_level": {
+            "accuracy": 1.0,
+            "macro_precision": 1.0,
+            "macro_recall": 1.0,
+            "macro_f1": 1.0,
+            "weighted_precision": 1.0,
+            "weighted_recall": 1.0,
+            "weighted_f1": 1.0,
+            "roc_auc": NaN,
+            "cohen_kappa": NaN,
+            "ece": 0.001997828483581543,
+            "confusion_matrix": [
+                [
+                    70,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0
+                ]
+            ],
+            "per_class": {
+                "Home Care (Green)": {
+                    "support": 70.0,
+                    "sensitivity": 1.0,
+                    "specificity": 0.0
+                },
+                "Clinic Visit (Yellow, <48h)": {
+                    "support": 0,
+                    "sensitivity": 0.0,
+                    "specificity": 1.0
+                },
+                "Emergency Care (Red, immediate)": {
+                    "support": 0,
+                    "sensitivity": 0.0,
+                    "specificity": 1.0
+                }
+            }
+        }
+    }
+}

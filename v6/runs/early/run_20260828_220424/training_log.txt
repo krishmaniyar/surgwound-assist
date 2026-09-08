@@ -1,0 +1,3 @@
+SurgWound Pipeline v3.0 — 2026-08-28 22:04:24.153733
+Device: cuda
+

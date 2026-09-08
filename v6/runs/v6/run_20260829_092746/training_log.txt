@@ -1,0 +1,9 @@
+SurgWound Pipeline v4.0 (End-to-End) — 2026-08-29 09:27:44.819905
+Device: cuda
+
+
+============================================================
+v6.0 — DINOv2-Large + LLRD + Warmup + Deeper Heads + Fixed Seed
+Epochs: 60 | Batch: 4 | Accum: 4 | LR: 1e-05 | Seed: 42
+LR decay per layer: 0.85 | Warmup steps: 90/900
+============================================================

@@ -1,0 +1,575 @@
+{
+    "aggregate": {
+        "mean_macro_f1": 0.573487117284643,
+        "mean_accuracy": 0.8,
+        "mean_macro_precision": 0.5951631178603645,
+        "mean_macro_recall": 0.5856660904253248,
+        "mean_weighted_f1": 0.7814580650298801,
+        "minority_mean_macro_f1": 0.3992355418874266,
+        "exact_match_ratio": 0.21428571428571427
+    },
+    "per_head": {
+        "location": {
+            "accuracy": 0.6428571428571429,
+            "macro_precision": 0.6109752992105933,
+            "macro_recall": 0.6184371184371183,
+            "macro_f1": 0.605771964403327,
+            "micro_f1": 0.6428571428571429,
+            "weighted_precision": 0.6432442067736185,
+            "weighted_recall": 0.6428571428571429,
+            "weighted_f1": 0.6356283856841948,
+            "roc_auc": NaN,
+            "cohen_kappa": NaN,
+            "per_class": {
+                "Abdomen": {
+                    "precision": 0.7647058823529411,
+                    "recall": 0.9285714285714286,
+                    "f1": 0.8387096774193549,
+                    "support": 14.0
+                },
+                "Patella": {
+                    "precision": 0.5,
+                    "recall": 0.38461538461538464,
+                    "f1": 0.43478260869565216,
+                    "support": 13.0
+                },
+                "Ankle": {
+                    "precision": 0.8333333333333334,
+                    "recall": 0.5555555555555556,
+                    "f1": 0.6666666666666666,
+                    "support": 9.0
+                },
+                "Facial region": {
+                    "precision": 0.8,
+                    "recall": 0.8888888888888888,
+                    "f1": 0.8421052631578947,
+                    "support": 9.0
+                },
+                "Manus": {
+                    "precision": 0.5,
+                    "recall": 0.5,
+                    "f1": 0.5,
+                    "support": 2.0
+                },
+                "Cervical region": {
+                    "precision": 0.3333333333333333,
+                    "recall": 0.5,
+                    "f1": 0.4,
+                    "support": 2.0
+                },
+                "Other": {
+                    "precision": 0.5454545454545454,
+                    "recall": 0.5714285714285714,
+                    "f1": 0.5581395348837209,
+                    "support": 21.0
+                },
+                "Uncertain": {
+                    "precision": 0.0,
+                    "recall": 0.0,
+                    "f1": 0.0,
+                    "support": 0
+                }
+            },
+            "confusion_matrix": [
+                [
+                    13,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    1,
+                    5,
+                    0,
+                    0,
+                    0,
+                    1,
+                    6,
+                    0
+                ],
+                [
+                    1,
+                    1,
+                    5,
+                    0,
+                    0,
+                    0,
+                    2,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0,
+                    8,
+                    0,
+                    1,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    1,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    1,
+                    1,
+                    0
+                ],
+                [
+                    2,
+                    4,
+                    1,
+                    1,
+                    1,
+                    0,
+                    12,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ]
+        },
+        "healing_status": {
+            "accuracy": 0.7428571428571429,
+            "macro_precision": 0.7502774694783574,
+            "macro_recall": 0.694229112833764,
+            "macro_f1": 0.7017045454545454,
+            "micro_f1": 0.7428571428571429,
+            "weighted_precision": 0.7469795465355954,
+            "weighted_recall": 0.7428571428571429,
+            "weighted_f1": 0.7270292207792207,
+            "roc_auc": NaN,
+            "cohen_kappa": NaN,
+            "per_class": {
+                "Healed": {
+                    "precision": 0.7358490566037735,
+                    "recall": 0.9069767441860465,
+                    "f1": 0.8125,
+                    "support": 43.0
+                },
+                "Not Healed": {
+                    "precision": 0.7647058823529411,
+                    "recall": 0.48148148148148145,
+                    "f1": 0.5909090909090909,
+                    "support": 27.0
+                }
+            },
+            "confusion_matrix": [
+                [
+                    39,
+                    4
+                ],
+                [
+                    14,
+                    13
+                ]
+            ]
+        },
+        "closure_method": {
+            "accuracy": 0.6714285714285714,
+            "macro_precision": 0.4183333333333333,
+            "macro_recall": 0.38055555555555554,
+            "macro_f1": 0.3936004784688995,
+            "micro_f1": 0.6714285714285714,
+            "weighted_precision": 0.6538095238095237,
+            "weighted_recall": 0.6714285714285714,
+            "weighted_f1": 0.6588687628161312,
+            "roc_auc": NaN,
+            "cohen_kappa": NaN,
+            "per_class": {
+                "Invisible": {
+                    "precision": 0.6,
+                    "recall": 0.5,
+                    "f1": 0.5454545454545454,
+                    "support": 18.0
+                },
+                "Sutures": {
+                    "precision": 0.74,
+                    "recall": 0.8222222222222222,
+                    "f1": 0.7789473684210526,
+                    "support": 45.0
+                },
+                "Staples": {
+                    "precision": 0.0,
+                    "recall": 0.0,
+                    "f1": 0.0,
+                    "support": 2.0
+                },
+                "Adhesives": {
+                    "precision": 0.3333333333333333,
+                    "recall": 0.2,
+                    "f1": 0.25,
+                    "support": 5.0
+                },
+                "Uncertain": {
+                    "precision": 0.0,
+                    "recall": 0.0,
+                    "f1": 0.0,
+                    "support": 0
+                }
+            },
+            "confusion_matrix": [
+                [
+                    9,
+                    8,
+                    0,
+                    1,
+                    0
+                ],
+                [
+                    5,
+                    37,
+                    2,
+                    1,
+                    0
+                ],
+                [
+                    0,
+                    2,
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    1,
+                    3,
+                    0,
+                    1,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ]
+        },
+        "exudate_type": {
+            "accuracy": 0.9,
+            "macro_precision": 0.2878787878787879,
+            "macro_recall": 0.39682539682539686,
+            "macro_f1": 0.32558139534883723,
+            "micro_f1": 0.9,
+            "weighted_precision": 0.8525974025974027,
+            "weighted_recall": 0.9,
+            "weighted_f1": 0.8746400885935769,
+            "roc_auc": NaN,
+            "cohen_kappa": NaN,
+            "per_class": {
+                "Non-existent": {
+                    "precision": 0.9393939393939394,
+                    "recall": 0.9841269841269841,
+                    "f1": 0.9612403100775194,
+                    "support": 63.0
+                },
+                "Serous": {
+                    "precision": 0.0,
+                    "recall": 0.0,
+                    "f1": 0.0,
+                    "support": 2.0
+                },
+                "Sanguineous": {
+                    "precision": 0.0,
+                    "recall": 0.0,
+                    "f1": 0.0,
+                    "support": 2.0
+                },
+                "Purulent": {
+                    "precision": 0.5,
+                    "recall": 1.0,
+                    "f1": 0.6666666666666666,
+                    "support": 1.0
+                },
+                "Seropurulent": {
+                    "precision": 0.0,
+                    "recall": 0.0,
+                    "f1": 0.0,
+                    "support": 2.0
+                },
+                "Uncertain": {
+                    "precision": 0.0,
+                    "recall": 0.0,
+                    "f1": 0.0,
+                    "support": 0
+                }
+            },
+            "confusion_matrix": [
+                [
+                    62,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    1,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    2,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0
+                ],
+                [
+                    1,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0,
+                    0,
+                    0,
+                    0
+                ]
+            ]
+        },
+        "erythema": {
+            "accuracy": 0.8142857142857143,
+            "macro_precision": 0.6696428571428571,
+            "macro_recall": 0.7049306625577811,
+            "macro_f1": 0.6834782608695652,
+            "micro_f1": 0.8142857142857143,
+            "weighted_precision": 0.8349489795918367,
+            "weighted_recall": 0.8142857142857143,
+            "weighted_f1": 0.8230062111801243,
+            "roc_auc": NaN,
+            "cohen_kappa": NaN,
+            "per_class": {
+                "Non-existent": {
+                    "precision": 0.9107142857142857,
+                    "recall": 0.864406779661017,
+                    "f1": 0.8869565217391304,
+                    "support": 59.0
+                },
+                "Existent": {
+                    "precision": 0.42857142857142855,
+                    "recall": 0.5454545454545454,
+                    "f1": 0.48,
+                    "support": 11.0
+                },
+                "Uncertain": {
+                    "precision": 0.0,
+                    "recall": 0.0,
+                    "f1": 0.0,
+                    "support": 0
+                }
+            },
+            "confusion_matrix": [
+                [
+                    51,
+                    8,
+                    0
+                ],
+                [
+                    5,
+                    6,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0
+                ]
+            ]
+        },
+        "edema": {
+            "accuracy": 0.7714285714285715,
+            "macro_precision": 0.40298507462686567,
+            "macro_recall": 0.47368421052631576,
+            "macro_f1": 0.43548387096774194,
+            "micro_f1": 0.7714285714285715,
+            "weighted_precision": 0.6562899786780384,
+            "weighted_recall": 0.7714285714285715,
+            "weighted_f1": 0.7092165898617512,
+            "roc_auc": NaN,
+            "cohen_kappa": NaN,
+            "per_class": {
+                "Non-existent": {
+                    "precision": 0.8059701492537313,
+                    "recall": 0.9473684210526315,
+                    "f1": 0.8709677419354839,
+                    "support": 57.0
+                },
+                "Existent": {
+                    "precision": 0.0,
+                    "recall": 0.0,
+                    "f1": 0.0,
+                    "support": 13.0
+                },
+                "Uncertain": {
+                    "precision": 0.0,
+                    "recall": 0.0,
+                    "f1": 0.0,
+                    "support": 0
+                }
+            },
+            "confusion_matrix": [
+                [
+                    54,
+                    3,
+                    0
+                ],
+                [
+                    13,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0
+                ]
+            ]
+        },
+        "infection_risk": {
+            "accuracy": 0.8571428571428571,
+            "macro_precision": 0.6212121212121212,
+            "macro_recall": 0.4166666666666667,
+            "macro_f1": 0.4422764227642277,
+            "micro_f1": 0.8571428571428571,
+            "weighted_precision": 0.8746753246753247,
+            "weighted_recall": 0.8571428571428571,
+            "weighted_f1": 0.8232752613240419,
+            "roc_auc": NaN,
+            "cohen_kappa": NaN,
+            "per_class": {
+                "Low": {
+                    "precision": 0.8636363636363636,
+                    "recall": 1.0,
+                    "f1": 0.926829268292683,
+                    "support": 57.0
+                },
+                "Medium": {
+                    "precision": 1.0,
+                    "recall": 0.25,
+                    "f1": 0.4,
+                    "support": 12.0
+                },
+                "High": {
+                    "precision": 0.0,
+                    "recall": 0.0,
+                    "f1": 0.0,
+                    "support": 1.0
+                }
+            },
+            "confusion_matrix": [
+                [
+                    57,
+                    0,
+                    0
+                ],
+                [
+                    8,
+                    3,
+                    1
+                ],
+                [
+                    1,
+                    0,
+                    0
+                ]
+            ]
+        },
+        "urgency_level": {
+            "accuracy": 1.0,
+            "macro_precision": 1.0,
+            "macro_recall": 1.0,
+            "macro_f1": 1.0,
+            "micro_f1": 1.0,
+            "weighted_precision": 1.0,
+            "weighted_recall": 1.0,
+            "weighted_f1": 1.0,
+            "roc_auc": NaN,
+            "cohen_kappa": NaN,
+            "per_class": {
+                "Home Care (Green)": {
+                    "precision": 1.0,
+                    "recall": 1.0,
+                    "f1": 1.0,
+                    "support": 70.0
+                },
+                "Clinic Visit (Yellow, <48h)": {
+                    "precision": 0.0,
+                    "recall": 0.0,
+                    "f1": 0.0,
+                    "support": 0
+                },
+                "Emergency Care (Red, immediate)": {
+                    "precision": 0.0,
+                    "recall": 0.0,
+                    "f1": 0.0,
+                    "support": 0
+                }
+            },
+            "confusion_matrix": [
+                [
+                    70,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0
+                ]
+            ]
+        }
+    },
+    "ensemble_models": [
+        "e1_single_s42",
+        "e2_multi_s42",
+        "e3_multi_s123"
+    ]
+}

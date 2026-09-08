@@ -1,0 +1,47 @@
+======================================================================
+SURGWOUND ASSIST V8 TRAINING — Strategy: LOGIT_ADJUSTED
+Device: cuda | Epochs: 80 | Batch: 16 | Accum: 2 | LR: 3.00e-05 | Dropout: 0.25
+Multiscale: True (Crop: 0.65) | Balanced Sampler: True | Text Prototypes: True
+Tau: 1.2 | Adaptive Tau: False | Legacy Mode: True | Seed: 42 | Patience: 20
+Label Smoothing: 0.0 | MixUp: False | Effective Batch: 32
+======================================================================
+[train] Balanced Sampler enabled: min_w=2.0752, max_w=6.6072, ratio=3.18x
+  Epoch  1/80 [LOGIT_ADJUSTED] loss=8.7106  val_f1=0.1689  best=0.1689 *  lr=3.75e-06  elapsed=15s  no_improve=0
+  Epoch  2/80 [LOGIT_ADJUSTED] loss=8.3923  val_f1=0.1856  best=0.1856 *  lr=7.50e-06  elapsed=30s  no_improve=0
+  Epoch  3/80 [LOGIT_ADJUSTED] loss=8.2973  val_f1=0.1858  best=0.1858 *  lr=1.13e-05  elapsed=44s  no_improve=0
+  Epoch  4/80 [LOGIT_ADJUSTED] loss=7.9245  val_f1=0.1675  best=0.1858  lr=1.50e-05  elapsed=59s  no_improve=1
+  Epoch  5/80 [LOGIT_ADJUSTED] loss=7.5561  val_f1=0.1650  best=0.1858  lr=1.88e-05  elapsed=74s  no_improve=2
+  Epoch  6/80 [LOGIT_ADJUSTED] loss=6.8064  val_f1=0.2490  best=0.2490 *  lr=2.25e-05  elapsed=89s  no_improve=0
+  Epoch  7/80 [LOGIT_ADJUSTED] loss=6.5465  val_f1=0.2699  best=0.2699 *  lr=2.63e-05  elapsed=104s  no_improve=0
+  Epoch  8/80 [LOGIT_ADJUSTED] loss=5.7489  val_f1=0.3139  best=0.3139 *  lr=3.00e-05  elapsed=119s  no_improve=0
+  Epoch  9/80 [LOGIT_ADJUSTED] loss=5.3456  val_f1=0.3231  best=0.3231 *  lr=3.00e-05  elapsed=134s  no_improve=0
+  Epoch 10/80 [LOGIT_ADJUSTED] loss=4.7014  val_f1=0.3570  best=0.3570 *  lr=2.99e-05  elapsed=148s  no_improve=0
+  Epoch 11/80 [LOGIT_ADJUSTED] loss=4.5122  val_f1=0.3694  best=0.3694 *  lr=2.99e-05  elapsed=163s  no_improve=0
+  Epoch 12/80 [LOGIT_ADJUSTED] loss=3.9026  val_f1=0.3659  best=0.3694  lr=2.98e-05  elapsed=177s  no_improve=1
+  Epoch 13/80 [LOGIT_ADJUSTED] loss=3.7769  val_f1=0.3799  best=0.3799 *  lr=2.96e-05  elapsed=192s  no_improve=0
+  Epoch 14/80 [LOGIT_ADJUSTED] loss=3.6047  val_f1=0.3831  best=0.3831 *  lr=2.95e-05  elapsed=207s  no_improve=0
+  Epoch 15/80 [LOGIT_ADJUSTED] loss=3.0642  val_f1=0.3799  best=0.3831  lr=2.93e-05  elapsed=222s  no_improve=1
+  Epoch 16/80 [LOGIT_ADJUSTED] loss=2.7174  val_f1=0.4009  best=0.4009 *  lr=2.91e-05  elapsed=236s  no_improve=0
+  Epoch 17/80 [LOGIT_ADJUSTED] loss=2.5858  val_f1=0.4169  best=0.4169 *  lr=2.89e-05  elapsed=252s  no_improve=0
+  Epoch 18/80 [LOGIT_ADJUSTED] loss=2.4143  val_f1=0.3989  best=0.4169  lr=2.86e-05  elapsed=267s  no_improve=1
+  Epoch 19/80 [LOGIT_ADJUSTED] loss=2.2395  val_f1=0.3940  best=0.4169  lr=2.83e-05  elapsed=282s  no_improve=2
+  Epoch 20/80 [LOGIT_ADJUSTED] loss=2.0132  val_f1=0.3879  best=0.4169  lr=2.80e-05  elapsed=297s  no_improve=3
+  Epoch 21/80 [LOGIT_ADJUSTED] loss=1.9324  val_f1=0.4034  best=0.4169  lr=2.77e-05  elapsed=312s  no_improve=4
+  Epoch 22/80 [LOGIT_ADJUSTED] loss=1.7733  val_f1=0.3976  best=0.4169  lr=2.73e-05  elapsed=327s  no_improve=5
+  Epoch 23/80 [LOGIT_ADJUSTED] loss=1.5425  val_f1=0.3967  best=0.4169  lr=2.69e-05  elapsed=342s  no_improve=6
+  Epoch 24/80 [LOGIT_ADJUSTED] loss=1.4441  val_f1=0.3955  best=0.4169  lr=2.65e-05  elapsed=357s  no_improve=7
+  Epoch 25/80 [LOGIT_ADJUSTED] loss=1.2811  val_f1=0.4087  best=0.4169  lr=2.61e-05  elapsed=372s  no_improve=8
+  Epoch 26/80 [LOGIT_ADJUSTED] loss=1.1572  val_f1=0.4041  best=0.4169  lr=2.56e-05  elapsed=387s  no_improve=9
+  Epoch 27/80 [LOGIT_ADJUSTED] loss=1.1520  val_f1=0.4082  best=0.4169  lr=2.51e-05  elapsed=402s  no_improve=10
+  Epoch 28/80 [LOGIT_ADJUSTED] loss=1.0200  val_f1=0.4008  best=0.4169  lr=2.46e-05  elapsed=417s  no_improve=11
+  Epoch 29/80 [LOGIT_ADJUSTED] loss=0.9668  val_f1=0.3993  best=0.4169  lr=2.41e-05  elapsed=431s  no_improve=12
+  Epoch 30/80 [LOGIT_ADJUSTED] loss=0.8635  val_f1=0.3844  best=0.4169  lr=2.36e-05  elapsed=447s  no_improve=13
+  Epoch 31/80 [LOGIT_ADJUSTED] loss=0.8025  val_f1=0.3856  best=0.4169  lr=2.31e-05  elapsed=461s  no_improve=14
+  Epoch 32/80 [LOGIT_ADJUSTED] loss=0.6876  val_f1=0.3971  best=0.4169  lr=2.25e-05  elapsed=477s  no_improve=15
+  Epoch 33/80 [LOGIT_ADJUSTED] loss=0.7390  val_f1=0.3964  best=0.4169  lr=2.19e-05  elapsed=492s  no_improve=16
+  Epoch 34/80 [LOGIT_ADJUSTED] loss=0.6592  val_f1=0.4032  best=0.4169  lr=2.13e-05  elapsed=506s  no_improve=17
+  Epoch 35/80 [LOGIT_ADJUSTED] loss=0.6066  val_f1=0.4056  best=0.4169  lr=2.07e-05  elapsed=521s  no_improve=18
+  Epoch 36/80 [LOGIT_ADJUSTED] loss=0.5358  val_f1=0.4115  best=0.4169  lr=2.01e-05  elapsed=537s  no_improve=19
+  Epoch 37/80 [LOGIT_ADJUSTED] loss=0.5220  val_f1=0.4129  best=0.4169  lr=1.95e-05  elapsed=552s  no_improve=20
+  [EarlyStopping] Triggered at epoch 37 (patience=20)
+[train] Best model checkpoint saved -> v8/runs\v8_e4_full686_balanced_tau12_20260905_120658\checkpoints\best_model.pth (val_macro_f1=0.4169)

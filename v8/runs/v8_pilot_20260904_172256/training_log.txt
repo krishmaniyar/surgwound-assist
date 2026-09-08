@@ -1,0 +1,7 @@
+======================================================================
+SURGWOUND ASSIST V8 TRAINING — Strategy: LOGIT_ADJUSTED
+Device: cuda | Epochs: 3 | Batch: 16 | Accum: 2 | LR: 3.00e-05
+Multiscale: False | Text Prototypes: True | Legacy Mode: True | Seed: 42
+======================================================================
+  Epoch  1/3 [LOGIT_ADJUSTED] loss=4.8031  val_f1=0.2543  best=0.2543 *  lr=2.48e-05  elapsed=7s  no_improve=0
+[FATAL FAILURE] Exploding gradient norm: inf!

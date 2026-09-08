@@ -1,0 +1,36 @@
+SurgWound Pipeline v4.0 (End-to-End) — 2026-08-28 22:34:42.442130
+Device: cuda
+
+
+============================================================
+End-to-End Multi-Task Fine-Tuning
+Epochs: 60 | Batch: 4 | Accum: 4 | LR: 1e-05
+============================================================
+  Epoch  1/60 [P1:Focal] loss=3.4946  val_mean_f1=0.3435  best=0.3435  elapsed=48s  no_improve=0
+  Epoch  2/60 [P1:Focal] loss=1.8443  val_mean_f1=0.3607  best=0.3607  elapsed=192s  no_improve=0
+  Epoch  3/60 [P1:Focal] loss=1.1266  val_mean_f1=0.3837  best=0.3837  elapsed=318s  no_improve=0
+  Epoch  4/60 [P1:Focal] loss=0.7688  val_mean_f1=0.3399  best=0.3837  elapsed=444s  no_improve=1
+  Epoch  5/60 [P1:Focal] loss=0.6340  val_mean_f1=0.4213  best=0.4213  elapsed=569s  no_improve=0
+  Epoch  6/60 [P1:Focal] loss=0.4033  val_mean_f1=0.4269  best=0.4269  elapsed=693s  no_improve=0
+  Epoch  7/60 [P1:Focal] loss=0.3399  val_mean_f1=0.4604  best=0.4604  elapsed=838s  no_improve=0
+  Epoch  8/60 [P1:Focal] loss=0.2319  val_mean_f1=0.4534  best=0.4604  elapsed=966s  no_improve=1
+  Epoch  9/60 [P1:Focal] loss=0.1504  val_mean_f1=0.4458  best=0.4604  elapsed=1093s  no_improve=2
+  Epoch 10/60 [P1:Focal] loss=0.0932  val_mean_f1=0.4627  best=0.4627  elapsed=1220s  no_improve=0
+  Epoch 11/60 [P1:Focal] loss=0.1340  val_mean_f1=0.4757  best=0.4757  elapsed=1351s  no_improve=0
+  Epoch 12/60 [P1:Focal] loss=0.3172  val_mean_f1=0.4785  best=0.4785  elapsed=1466s  no_improve=0
+  Epoch 13/60 [P1:Focal] loss=0.3663  val_mean_f1=0.4569  best=0.4785  elapsed=1582s  no_improve=1
+  Epoch 14/60 [P1:Focal] loss=0.1901  val_mean_f1=0.5148  best=0.5148  elapsed=1698s  no_improve=0
+  Epoch 15/60 [P1:Focal] loss=0.1343  val_mean_f1=0.5169  best=0.5169  elapsed=1802s  no_improve=0
+  Epoch 16/60 [P1:Focal] loss=0.0880  val_mean_f1=0.5395  best=0.5395  elapsed=1917s  no_improve=0
+  Epoch 17/60 [P1:Focal] loss=0.0774  val_mean_f1=0.4977  best=0.5395  elapsed=2063s  no_improve=1
+  Epoch 18/60 [P1:Focal] loss=0.0538  val_mean_f1=0.5188  best=0.5395  elapsed=2209s  no_improve=2
+  Epoch 19/60 [P1:Focal] loss=0.0291  val_mean_f1=0.5681  best=0.5681  elapsed=2355s  no_improve=0
+  Epoch 20/60 [P1:Focal] loss=0.0164  val_mean_f1=0.5778  best=0.5778  elapsed=2474s  no_improve=0
+  Epoch 21/60 [P1:Focal] loss=0.0188  val_mean_f1=0.5241  best=0.5778  elapsed=2612s  no_improve=1
+  Epoch 22/60 [P1:Focal] loss=0.0630  val_mean_f1=0.5591  best=0.5778  elapsed=2749s  no_improve=2
+  Epoch 23/60 [P1:Focal] loss=0.0794  val_mean_f1=0.5170  best=0.5778  elapsed=2887s  no_improve=3
+  Epoch 24/60 [P1:Focal] loss=0.1327  val_mean_f1=0.5607  best=0.5778  elapsed=3024s  no_improve=4
+  Epoch 25/60 [P1:Focal] loss=0.0275  val_mean_f1=0.5650  best=0.5778  elapsed=3161s  no_improve=5
+  Epoch 26/60 [P1:Focal] loss=0.0356  val_mean_f1=0.5648  best=0.5778  elapsed=3299s  no_improve=6
+  Epoch 27/60 [P1:Focal] loss=0.0223  val_mean_f1=0.5518  best=0.5778  elapsed=3436s  no_improve=7
+  Epoch 28/60 [P1:Focal] loss=0.0151  val_mean_f1=0.5939  best=0.5939  elapsed=3574s  no_improve=0

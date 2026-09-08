@@ -1,0 +1,588 @@
+{
+    "aggregate": {
+        "mean_macro_f1": 0.4627456134595158,
+        "mean_accuracy": 0.6715328467153284,
+        "mean_macro_precision": 0.4587814990964254,
+        "mean_macro_recall": 0.4921349736448525,
+        "mean_weighted_f1": 0.6782627723968497,
+        "mean_roc_auc": 0.773817256163329,
+        "mean_cohen_kappa": 0.30139686308740177,
+        "minority_mean_macro_f1": 0.3760874841456141,
+        "exact_match_ratio": 0.0948905109489051
+    },
+    "per_head": {
+        "location": {
+            "accuracy": 0.5985401459854015,
+            "macro_precision": 0.555434909293605,
+            "macro_recall": 0.6163592575187969,
+            "macro_f1": 0.5551378639368763,
+            "micro_f1": 0.5985401459854015,
+            "weighted_precision": 0.641658266624944,
+            "weighted_recall": 0.5985401459854015,
+            "weighted_f1": 0.6031057596099906,
+            "roc_auc": 0.9262686403840674,
+            "cohen_kappa": 0.5263389489564998,
+            "per_class": {
+                "Abdomen": {
+                    "precision": 0.5,
+                    "recall": 0.631578947368421,
+                    "f1": 0.5581395348837209,
+                    "support": 19.0
+                },
+                "Patella": {
+                    "precision": 0.18181818181818182,
+                    "recall": 0.6666666666666666,
+                    "f1": 0.2857142857142857,
+                    "support": 3.0
+                },
+                "Ankle": {
+                    "precision": 0.75,
+                    "recall": 0.7894736842105263,
+                    "f1": 0.7692307692307693,
+                    "support": 19.0
+                },
+                "Facial region": {
+                    "precision": 0.8461538461538461,
+                    "recall": 0.7333333333333333,
+                    "f1": 0.7857142857142857,
+                    "support": 15.0
+                },
+                "Manus": {
+                    "precision": 0.5,
+                    "recall": 0.9,
+                    "f1": 0.6428571428571429,
+                    "support": 10.0
+                },
+                "Cervical region": {
+                    "precision": 0.3333333333333333,
+                    "recall": 0.25,
+                    "f1": 0.2857142857142857,
+                    "support": 4.0
+                },
+                "Other": {
+                    "precision": 0.6521739130434783,
+                    "recall": 0.42857142857142855,
+                    "f1": 0.5172413793103449,
+                    "support": 35.0
+                },
+                "Uncertain": {
+                    "precision": 0.68,
+                    "recall": 0.53125,
+                    "f1": 0.5964912280701754,
+                    "support": 32.0
+                }
+            },
+            "confusion_matrix": [
+                [
+                    12,
+                    1,
+                    1,
+                    0,
+                    0,
+                    0,
+                    2,
+                    3
+                ],
+                [
+                    0,
+                    2,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    15,
+                    0,
+                    1,
+                    1,
+                    2,
+                    0
+                ],
+                [
+                    2,
+                    0,
+                    0,
+                    11,
+                    0,
+                    1,
+                    0,
+                    1
+                ],
+                [
+                    0,
+                    0,
+                    0,
+                    0,
+                    9,
+                    0,
+                    1,
+                    0
+                ],
+                [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    1,
+                    0,
+                    2
+                ],
+                [
+                    4,
+                    5,
+                    3,
+                    1,
+                    5,
+                    0,
+                    15,
+                    2
+                ],
+                [
+                    6,
+                    3,
+                    1,
+                    0,
+                    2,
+                    0,
+                    3,
+                    17
+                ]
+            ]
+        },
+        "healing_status": {
+            "accuracy": 0.6788321167883211,
+            "macro_precision": 0.6640661938534279,
+            "macro_recall": 0.653880266075388,
+            "macro_f1": 0.65640674874601,
+            "micro_f1": 0.6788321167883211,
+            "weighted_precision": 0.6733378198823144,
+            "weighted_recall": 0.6788321167883211,
+            "weighted_f1": 0.67370631837865,
+            "roc_auc": 0.7572062084257206,
+            "cohen_kappa": 0.3153112221717401,
+            "per_class": {
+                "Healed": {
+                    "precision": 0.7111111111111111,
+                    "recall": 0.7804878048780488,
+                    "f1": 0.7441860465116279,
+                    "support": 82.0
+                },
+                "Not Healed": {
+                    "precision": 0.6170212765957447,
+                    "recall": 0.5272727272727272,
+                    "f1": 0.5686274509803921,
+                    "support": 55.0
+                }
+            },
+            "confusion_matrix": [
+                [
+                    64,
+                    18
+                ],
+                [
+                    26,
+                    29
+                ]
+            ]
+        },
+        "closure_method": {
+            "accuracy": 0.5474452554744526,
+            "macro_precision": 0.31267132867132863,
+            "macro_recall": 0.3173477812177502,
+            "macro_f1": 0.311533743266205,
+            "micro_f1": 0.5474452554744526,
+            "weighted_precision": 0.5840355265172783,
+            "weighted_recall": 0.5474452554744526,
+            "weighted_f1": 0.5600134860829108,
+            "roc_auc": 0.6528382407533855,
+            "cohen_kappa": 0.3035992457161597,
+            "per_class": {
+                "Invisible": {
+                    "precision": 0.32,
+                    "recall": 0.42105263157894735,
+                    "f1": 0.36363636363636365,
+                    "support": 19.0
+                },
+                "Sutures": {
+                    "precision": 0.7818181818181819,
+                    "recall": 0.6323529411764706,
+                    "f1": 0.6991869918699187,
+                    "support": 68.0
+                },
+                "Staples": {
+                    "precision": 0.0,
+                    "recall": 0.0,
+                    "f1": 0.0,
+                    "support": 1.0
+                },
+                "Adhesives": {
+                    "precision": 0.0,
+                    "recall": 0.0,
+                    "f1": 0.0,
+                    "support": 4.0
+                },
+                "Uncertain": {
+                    "precision": 0.46153846153846156,
+                    "recall": 0.5333333333333333,
+                    "f1": 0.4948453608247423,
+                    "support": 45.0
+                }
+            },
+            "confusion_matrix": [
+                [
+                    8,
+                    4,
+                    0,
+                    0,
+                    7
+                ],
+                [
+                    6,
+                    43,
+                    0,
+                    2,
+                    17
+                ],
+                [
+                    0,
+                    0,
+                    0,
+                    0,
+                    1
+                ],
+                [
+                    1,
+                    0,
+                    0,
+                    0,
+                    3
+                ],
+                [
+                    10,
+                    8,
+                    1,
+                    2,
+                    24
+                ]
+            ]
+        },
+        "exudate_type": {
+            "accuracy": 0.6788321167883211,
+            "macro_precision": 0.2506908831908832,
+            "macro_recall": 0.2873343527013252,
+            "macro_f1": 0.26234434124527006,
+            "micro_f1": 0.6788321167883211,
+            "weighted_precision": 0.7278894503712021,
+            "weighted_recall": 0.6788321167883211,
+            "weighted_f1": 0.7010838926427274,
+            "roc_auc": 0.7216877370524354,
+            "cohen_kappa": 0.20600632244467876,
+            "per_class": {
+                "Non-existent": {
+                    "precision": 0.88,
+                    "recall": 0.8073394495412844,
+                    "f1": 0.8421052631578947,
+                    "support": 109.0
+                },
+                "Serous": {
+                    "precision": 0.2222222222222222,
+                    "recall": 0.25,
+                    "f1": 0.23529411764705882,
+                    "support": 8.0
+                },
+                "Sanguineous": {
+                    "precision": 0.125,
+                    "recall": 0.25,
+                    "f1": 0.16666666666666666,
+                    "support": 4.0
+                },
+                "Purulent": {
+                    "precision": 0.2,
+                    "recall": 0.3333333333333333,
+                    "f1": 0.25,
+                    "support": 3.0
+                },
+                "Seropurulent": {
+                    "precision": 0.0,
+                    "recall": 0.0,
+                    "f1": 0.0,
+                    "support": 1.0
+                },
+                "Uncertain": {
+                    "precision": 0.07692307692307693,
+                    "recall": 0.08333333333333333,
+                    "f1": 0.08,
+                    "support": 12.0
+                }
+            },
+            "confusion_matrix": [
+                [
+                    88,
+                    4,
+                    4,
+                    4,
+                    0,
+                    9
+                ],
+                [
+                    3,
+                    2,
+                    2,
+                    0,
+                    1,
+                    0
+                ],
+                [
+                    0,
+                    2,
+                    1,
+                    0,
+                    0,
+                    1
+                ],
+                [
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    2
+                ],
+                [
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    0
+                ],
+                [
+                    9,
+                    0,
+                    1,
+                    0,
+                    1,
+                    1
+                ]
+            ]
+        },
+        "erythema": {
+            "accuracy": 0.6788321167883211,
+            "macro_precision": 0.4395296752519597,
+            "macro_recall": 0.43873626373626373,
+            "macro_f1": 0.43894663894663893,
+            "micro_f1": 0.6788321167883211,
+            "weighted_precision": 0.670126940273498,
+            "weighted_recall": 0.6788321167883211,
+            "weighted_f1": 0.6742401019773283,
+            "roc_auc": 0.7305968603990749,
+            "cohen_kappa": 0.30432775533756484,
+            "per_class": {
+                "Non-existent": {
+                    "precision": 0.7659574468085106,
+                    "recall": 0.7912087912087912,
+                    "f1": 0.7783783783783784,
+                    "support": 91.0
+                },
+                "Existent": {
+                    "precision": 0.5526315789473685,
+                    "recall": 0.525,
+                    "f1": 0.5384615384615384,
+                    "support": 40.0
+                },
+                "Uncertain": {
+                    "precision": 0.0,
+                    "recall": 0.0,
+                    "f1": 0.0,
+                    "support": 6.0
+                }
+            },
+            "confusion_matrix": [
+                [
+                    72,
+                    16,
+                    3
+                ],
+                [
+                    17,
+                    21,
+                    2
+                ],
+                [
+                    5,
+                    1,
+                    0
+                ]
+            ]
+        },
+        "edema": {
+            "accuracy": 0.5985401459854015,
+            "macro_precision": 0.3950324917889514,
+            "macro_recall": 0.37490405575511954,
+            "macro_f1": 0.3784696427365435,
+            "micro_f1": 0.5985401459854015,
+            "weighted_precision": 0.5564360720438297,
+            "weighted_recall": 0.5985401459854015,
+            "weighted_f1": 0.5728105517266198,
+            "roc_auc": 0.6758209515594307,
+            "cohen_kappa": 0.06560019841269837,
+            "per_class": {
+                "Non-existent": {
+                    "precision": 0.7009345794392523,
+                    "recall": 0.7978723404255319,
+                    "f1": 0.746268656716418,
+                    "support": 94.0
+                },
+                "Existent": {
+                    "precision": 0.3076923076923077,
+                    "recall": 0.19047619047619047,
+                    "f1": 0.23529411764705882,
+                    "support": 21.0
+                },
+                "Uncertain": {
+                    "precision": 0.17647058823529413,
+                    "recall": 0.13636363636363635,
+                    "f1": 0.15384615384615385,
+                    "support": 22.0
+                }
+            },
+            "confusion_matrix": [
+                [
+                    75,
+                    6,
+                    13
+                ],
+                [
+                    16,
+                    4,
+                    1
+                ],
+                [
+                    16,
+                    3,
+                    3
+                ]
+            ]
+        },
+        "infection_risk": {
+            "accuracy": 0.7591240875912408,
+            "macro_precision": 0.5453703703703704,
+            "macro_recall": 0.6176638176638177,
+            "macro_f1": 0.552002209334438,
+            "micro_f1": 0.7591240875912408,
+            "weighted_precision": 0.8634428223844283,
+            "weighted_recall": 0.7591240875912408,
+            "weighted_f1": 0.79527573340429,
+            "roc_auc": 0.858248096772687,
+            "cohen_kappa": 0.3515490533562823,
+            "per_class": {
+                "Low": {
+                    "precision": 0.9583333333333334,
+                    "recall": 0.7863247863247863,
+                    "f1": 0.863849765258216,
+                    "support": 117.0
+                },
+                "Medium": {
+                    "precision": 0.2777777777777778,
+                    "recall": 0.6666666666666666,
+                    "f1": 0.39215686274509803,
+                    "support": 15.0
+                },
+                "High": {
+                    "precision": 0.4,
+                    "recall": 0.4,
+                    "f1": 0.4,
+                    "support": 5.0
+                }
+            },
+            "confusion_matrix": [
+                [
+                    92,
+                    23,
+                    2
+                ],
+                [
+                    4,
+                    10,
+                    1
+                ],
+                [
+                    0,
+                    3,
+                    2
+                ]
+            ]
+        },
+        "urgency_level": {
+            "accuracy": 0.8321167883211679,
+            "macro_precision": 0.5074561403508772,
+            "macro_recall": 0.6308539944903582,
+            "macro_f1": 0.5471237194641451,
+            "micro_f1": 0.8321167883211679,
+            "weighted_precision": 0.865194006915098,
+            "weighted_recall": 0.8321167883211679,
+            "weighted_f1": 0.8458663353522804,
+            "roc_auc": 0.8678713139598306,
+            "cohen_kappa": 0.33844215830359015,
+            "per_class": {
+                "Home Care (Green)": {
+                    "precision": 0.9473684210526315,
+                    "recall": 0.8925619834710744,
+                    "f1": 0.9191489361702128,
+                    "support": 121.0
+                },
+                "Clinic Visit (Yellow, <48h)": {
+                    "precision": 0.2,
+                    "recall": 0.25,
+                    "f1": 0.2222222222222222,
+                    "support": 12.0
+                },
+                "Emergency Care (Red, immediate)": {
+                    "precision": 0.375,
+                    "recall": 0.75,
+                    "f1": 0.5,
+                    "support": 4.0
+                }
+            },
+            "confusion_matrix": [
+                [
+                    108,
+                    11,
+                    2
+                ],
+                [
+                    6,
+                    3,
+                    3
+                ],
+                [
+                    0,
+                    1,
+                    3
+                ]
+            ]
+        }
+    },
+    "ensemble_models": [
+        "v8_e1_full686_textproto_20260905_113337",
+        "v8_e2_full686_multiscale_20260905_114327",
+        "v8_e3_full686_multiscale_s123_20260905_115550",
+        "v8_e4_full686_balanced_tau12_20260905_120658",
+        "v8_e5_full686_adaptive_multiscale_20260905_101735",
+        "v8_e6_mixup_smoothing_s7_20260905_105544"
+    ],
+    "blend_weights": [
+        0.5328,
+        0.0,
+        0.3946,
+        0.0,
+        0.0726,
+        0.0
+    ]
+}
