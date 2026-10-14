@@ -1,211 +1,271 @@
-import { useState } from 'react';
-import { ShieldAlert, ArrowLeft, Loader2, Download, AlertTriangle } from 'lucide-react';
-import { UploadZone } from './components/UploadZone';
-import { ResultBanner } from './components/ResultBanner';
-import { AttributeCard } from './components/AttributeCard';
-import { predictWound, type PredictResponse } from './api/client';
+import React, { useState, useEffect } from 'react';
+import { Header, ActiveTab } from './components/Header';
+import { ImageViewer } from './components/DiagnosticStudio/ImageViewer';
+import { ImageUploader } from './components/DiagnosticStudio/ImageUploader';
+import { TriageBanner } from './components/DiagnosticStudio/TriageBanner';
+import { AttributeMatrix } from './components/DiagnosticStudio/AttributeMatrix';
+import { ClinicalSummaryReport } from './components/DiagnosticStudio/ClinicalSummaryReport';
+import { WhatHappenedSection } from './components/WhatHappenedSection';
+import { PipelineTelemetry } from './components/PipelineTelemetry';
+import { CaseLibrary } from './components/CaseLibrary';
+import { Footer } from './components/Footer';
+import { checkBackendHealth, analyzeWoundImage, BackendHealth } from './api/client';
+import { SurgWoundAssessment, ClinicalSampleCase } from './types/clinical';
+import { AlertCircle, RefreshCw, Sparkles } from 'lucide-react';
 
-function App() {
-    const [file, setFile] = useState<File | null>(null);
-    const [preview, setPreview] = useState<string | null>(null);
-    const [isLoading, setIsLoading] = useState(false);
-    const [result, setResult] = useState<PredictResponse | null>(null);
-    const [error, setError] = useState<string | null>(null);
+export function App() {
+  const [activeTab, setActiveTab] = useState<ActiveTab>('studio');
+  const [backendHealth, setBackendHealth] = useState<BackendHealth>({
+    isOnline: false,
+    message: 'Checking API status...',
+    endpoint: 'http://localhost:8000',
+  });
 
-    const handleFileSelected = (selectedFile: File) => {
-        setFile(selectedFile);
-        const objectUrl = URL.createObjectURL(selectedFile);
-        setPreview(objectUrl);
-        setResult(null);
-        setError(null);
-    };
+  const [imageBlobUrl, setImageBlobUrl] = useState<string | null>(null);
+  const [assessment, setAssessment] = useState<SurgWoundAssessment | null>(null);
+  const [isAnalyzing, setIsAnalyzing] = useState<boolean>(false);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
-    const handleAnalyze = async () => {
-        if (!file) return;
-        
-        setIsLoading(true);
-        setError(null);
-        
-        try {
-            const data = await predictWound(file);
-            setResult(data);
-        } catch (err: any) {
-            setError(err.response?.data?.detail || err.message || "Failed to analyze image");
-        } finally {
-            setIsLoading(false);
+  // Check backend health on initial load
+  useEffect(() => {
+    checkBackendHealth().then((health) => setBackendHealth(health));
+    const interval = setInterval(() => {
+      checkBackendHealth().then((health) => setBackendHealth(health));
+    }, 15000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const handleImageSelected = async (file: File | Blob, caseId?: string) => {
+    // Revoke previous blob if exists
+    if (imageBlobUrl && imageBlobUrl.startsWith('blob:')) {
+      URL.revokeObjectURL(imageBlobUrl);
+    }
+
+    const previewUrl = URL.createObjectURL(file);
+    setImageBlobUrl(previewUrl);
+    setIsAnalyzing(true);
+    setErrorMessage(null);
+
+    try {
+      const result = await analyzeWoundImage(file, caseId);
+      setAssessment(result);
+    } catch (err: any) {
+      setErrorMessage(err.message || 'Inference failed. Please try another image.');
+    } finally {
+      setIsAnalyzing(false);
+    }
+  };
+
+  const handleReset = () => {
+    if (imageBlobUrl && imageBlobUrl.startsWith('blob:')) {
+      URL.revokeObjectURL(imageBlobUrl);
+    }
+    setImageBlobUrl(null);
+    setAssessment(null);
+    setErrorMessage(null);
+  };
+
+  const handleSelectCaseFromLibrary = (sampleCase: ClinicalSampleCase) => {
+    // Switch to studio tab and populate assessment
+    setActiveTab('studio');
+    // Generate canvas blob for this case
+    const canvas = document.createElement('canvas');
+    canvas.width = 640;
+    canvas.height = 480;
+    const ctx = canvas.getContext('2d');
+    if (ctx) {
+      const gradient = ctx.createLinearGradient(0, 0, 640, 480);
+      gradient.addColorStop(0, '#cda185');
+      gradient.addColorStop(1, '#be9074');
+      ctx.fillStyle = gradient;
+      ctx.fillRect(0, 0, 640, 480);
+
+      if (sampleCase.urgency.includes('Red')) {
+        ctx.fillStyle = 'rgba(180, 20, 20, 0.7)';
+        ctx.beginPath();
+        ctx.ellipse(320, 240, 160, 60, Math.PI / 12, 0, 2 * Math.PI);
+        ctx.fill();
+
+        ctx.fillStyle = '#6b1111';
+        ctx.beginPath();
+        ctx.ellipse(320, 240, 120, 25, Math.PI / 12, 0, 2 * Math.PI);
+        ctx.fill();
+
+        ctx.fillStyle = '#e8d489';
+        ctx.beginPath();
+        ctx.arc(310, 235, 14, 0, 2 * Math.PI);
+        ctx.arc(345, 245, 10, 0, 2 * Math.PI);
+        ctx.fill();
+      } else if (sampleCase.urgency.includes('Yellow')) {
+        ctx.fillStyle = 'rgba(210, 80, 80, 0.45)';
+        ctx.beginPath();
+        ctx.ellipse(320, 240, 140, 50, -Math.PI / 16, 0, 2 * Math.PI);
+        ctx.fill();
+
+        ctx.strokeStyle = '#7c2525';
+        ctx.lineWidth = 5;
+        ctx.beginPath();
+        ctx.moveTo(220, 230);
+        ctx.lineTo(420, 250);
+        ctx.stroke();
+
+        ctx.strokeStyle = '#2b2b2b';
+        ctx.lineWidth = 2;
+        for (let x = 240; x <= 400; x += 30) {
+          ctx.beginPath();
+          ctx.moveTo(x, 220);
+          ctx.lineTo(x, 260);
+          ctx.stroke();
         }
-    };
+      } else {
+        ctx.strokeStyle = '#8a5a44';
+        ctx.lineWidth = 3;
+        ctx.beginPath();
+        ctx.moveTo(220, 240);
+        ctx.lineTo(420, 240);
+        ctx.stroke();
 
-    const handleReset = () => {
-        setFile(null);
-        setPreview(null);
-        setResult(null);
-        setError(null);
-    };
+        ctx.fillStyle = 'rgba(255, 255, 255, 0.2)';
+        ctx.beginPath();
+        ctx.ellipse(320, 240, 110, 20, 0, 0, 2 * Math.PI);
+        ctx.fill();
+      }
 
-    const handleDownloadReport = () => {
-        if (!result) return;
-        
-        const reportContent = `
-SurgWound Assist - Assessment Report
-====================================
+      canvas.toBlob((blob) => {
+        if (blob) {
+          handleImageSelected(blob, sampleCase.id);
+        }
+      }, 'image/jpeg');
+    }
+  };
 
-Urgency Level: ${result.urgency_level.label}
-Infection Risk: ${result.infection_risk.label}
+  return (
+    <div className="min-h-screen bg-[#090d16] text-slate-100 flex flex-col font-sans selection:bg-cyan-500/20 selection:text-cyan-300">
+      <Header
+        activeTab={activeTab}
+        onTabChange={(tab) => setActiveTab(tab)}
+        backendHealth={backendHealth}
+        onReset={handleReset}
+        hasActiveResult={!!assessment}
+      />
 
-Attributes:
-- Wound Location: ${result.wound_location.label}
-- Healing Status: ${result.healing_status.label}
-- Closure Method: ${result.closure_method.label}
-- Exudate Type: ${result.exudate_type.label}
-- Erythema: ${result.erythema.label}
-- Edema: ${result.edema.label}
+      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+        {/* Error banner if inference fails */}
+        {errorMessage && (
+          <div className="mb-6 p-4 rounded-xl bg-red-950/40 border border-red-800 text-red-200 text-sm flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <AlertCircle className="w-5 h-5 text-red-400 shrink-0" />
+              <span>{errorMessage}</span>
+            </div>
+            <button
+              onClick={() => setErrorMessage(null)}
+              className="text-xs text-red-400 hover:text-red-200 underline font-mono"
+            >
+              Dismiss
+            </button>
+          </div>
+        )}
 
-Clinical Summary:
-${result.report}
-
-Disclaimer: This tool provides an informational assessment only, is not a medical diagnosis, and does not replace professional evaluation.
-        `.trim();
-        
-        const blob = new Blob([reportContent], { type: 'text/plain' });
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = 'wound-assessment-report.txt';
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-        URL.revokeObjectURL(url);
-    };
-
-    return (
-        <div className="min-h-screen bg-slate-50 text-slate-800">
-            {/* Header */}
-            <header className="bg-white border-b border-slate-200 sticky top-0 z-10 shadow-sm">
-                <div className="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
-                    <div className="flex items-center gap-2 text-blue-600">
-                        <ShieldAlert size={24} />
-                        <h1 className="font-bold text-xl tracking-tight">SurgWound Assist</h1>
-                    </div>
-                </div>
-            </header>
-
-            <main className="max-w-5xl mx-auto px-4 py-8">
-                {/* Global Medical Disclaimer */}
-                <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 mb-8 flex items-start gap-3">
-                    <AlertTriangle className="text-amber-500 shrink-0 mt-0.5" size={20} />
-                    <p className="text-sm text-amber-800">
-                        <strong>Disclaimer:</strong> This tool provides an informational assessment only, is not a medical diagnosis, 
-                        and does not replace professional evaluation. It is built on a research dataset for educational purposes.
-                    </p>
+        {/* Tab 1: Clinical Diagnostic Studio */}
+        {activeTab === 'studio' && (
+          <div className="space-y-6">
+            {!imageBlobUrl ? (
+              <div className="max-w-4xl mx-auto space-y-6">
+                <div className="text-center space-y-2">
+                  <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+                    Autonomous Multi-Attribute Surgical Wound Assessment
+                  </h2>
+                  <p className="text-xs sm:text-sm text-slate-400 max-w-2xl mx-auto">
+                    Evaluate surgical incisions across 8 clinical variables with dual-stream BiomedCLIP ViT-B/16, 
+                    PubMedBERT semantic prototypes, and calibrated triage classification.
+                  </p>
                 </div>
 
-                {!result ? (
-                    <div className="max-w-2xl mx-auto">
-                        <div className="bg-white rounded-2xl shadow-sm border border-slate-200 p-6 md:p-8">
-                            <h2 className="text-2xl font-bold mb-6 text-center">Post-Operative Wound Assessment</h2>
-                            
-                            {!preview ? (
-                                <UploadZone onFileSelected={handleFileSelected} isLoading={isLoading} />
-                            ) : (
-                                <div className="space-y-6">
-                                    <div className="relative rounded-xl overflow-hidden border border-slate-200 bg-slate-100 flex justify-center items-center h-64 md:h-80">
-                                        <img 
-                                            src={preview} 
-                                            alt="Wound preview" 
-                                            className="max-w-full max-h-full object-contain"
-                                        />
-                                    </div>
-                                    
-                                    {error && (
-                                        <div className="p-4 bg-red-50 text-red-700 rounded-lg text-sm border border-red-200">
-                                            {error}
-                                        </div>
-                                    )}
-                                    
-                                    <div className="flex gap-4">
-                                        <button 
-                                            onClick={handleReset}
-                                            disabled={isLoading}
-                                            className="flex-1 py-3 px-4 border border-slate-300 rounded-lg font-medium text-slate-600 hover:bg-slate-50 transition-colors disabled:opacity-50"
-                                        >
-                                            Try Another Photo
-                                        </button>
-                                        <button 
-                                            onClick={handleAnalyze}
-                                            disabled={isLoading}
-                                            className="flex-2 py-3 px-8 bg-blue-600 text-white rounded-lg font-bold shadow-sm hover:bg-blue-700 transition-colors disabled:opacity-70 flex items-center justify-center gap-2 flex-grow"
-                                        >
-                                            {isLoading ? (
-                                                <>
-                                                    <Loader2 className="animate-spin" size={20} />
-                                                    Analyzing...
-                                                </>
-                                            ) : (
-                                                "Analyze Wound"
-                                            )}
-                                        </button>
-                                    </div>
-                                </div>
-                            )}
-                        </div>
-                    </div>
-                ) : (
-                    <div className="space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500">
-                        {/* Back Button */}
-                        <button 
-                            onClick={handleReset}
-                            className="flex items-center gap-2 text-slate-500 hover:text-slate-800 transition-colors text-sm font-medium"
-                        >
-                            <ArrowLeft size={16} />
-                            Upload Another Photo
-                        </button>
-                        
-                        {/* Top Banner - Triage */}
-                        <ResultBanner 
-                            urgency={result.urgency_level} 
-                            infectionRisk={result.infection_risk} 
-                        />
-                        
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                            {/* Left Column: Image & Report */}
-                            <div className="md:col-span-1 space-y-6">
-                                <div className="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
-                                    <div className="aspect-square rounded-lg overflow-hidden bg-slate-100 border border-slate-200 mb-4">
-                                        <img src={preview!} alt="Analyzed wound" className="w-full h-full object-cover" />
-                                    </div>
-                                    <h3 className="font-semibold text-slate-800 mb-2">Clinical Summary</h3>
-                                    <p className="text-sm text-slate-600 leading-relaxed">
-                                        {result.report}
-                                    </p>
-                                    
-                                    <button 
-                                        onClick={handleDownloadReport}
-                                        className="w-full mt-4 py-2 border border-slate-300 rounded-lg text-sm font-medium text-slate-700 hover:bg-slate-50 flex justify-center items-center gap-2"
-                                    >
-                                        <Download size={16} />
-                                        Download Report
-                                    </button>
-                                </div>
-                            </div>
-                            
-                            {/* Right Column: Attribute Cards */}
-                            <div className="md:col-span-2">
-                                <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
-                                    <AttributeCard title="Location" prediction={result.wound_location} />
-                                    <AttributeCard title="Healing Status" prediction={result.healing_status} />
-                                    <AttributeCard title="Closure Method" prediction={result.closure_method} />
-                                    <AttributeCard title="Exudate Type" prediction={result.exudate_type} />
-                                    <AttributeCard title="Erythema" prediction={result.erythema} />
-                                    <AttributeCard title="Edema" prediction={result.edema} />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <ImageUploader
+                  onImageSelected={handleImageSelected}
+                  isLoading={isAnalyzing}
+                />
+              </div>
+            ) : (
+              <div className="space-y-6 animate-in fade-in duration-300">
+                {/* Triage Urgency Priority Banner */}
+                {assessment && (
+                  <TriageBanner
+                    urgency={assessment.urgency_level}
+                    infectionRisk={assessment.infection_risk}
+                    processingTimeMs={assessment.processingTimeMs}
+                  />
                 )}
-            </main>
-        </div>
-    );
+
+                {/* 2-Column Clinical Layout */}
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+                  {/* Left Column (5/12): Image Viewport */}
+                  <div className="lg:col-span-5 space-y-4">
+                    <ImageViewer imageSrc={imageBlobUrl} isAnalyzing={isAnalyzing} />
+
+                    <div className="flex items-center justify-between">
+                      <button
+                        onClick={handleReset}
+                        className="text-xs text-slate-400 hover:text-cyan-400 transition-colors flex items-center gap-1.5"
+                      >
+                        <RefreshCw className="w-3.5 h-3.5" />
+                        <span>Upload Different Wound Photo</span>
+                      </button>
+
+                      <span className="text-[11px] font-mono text-slate-400">
+                        {assessment?.modelArchitecture || 'BiomedCLIP v8.3 SOTA'}
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* Right Column (7/12): 8 Attributes & Clinical Synthesis */}
+                  <div className="lg:col-span-7 space-y-6">
+                    {assessment ? (
+                      <>
+                        <AttributeMatrix
+                          location={assessment.wound_location}
+                          healingStatus={assessment.healing_status}
+                          closureMethod={assessment.closure_method}
+                          exudateType={assessment.exudate_type}
+                          erythema={assessment.erythema}
+                          edema={assessment.edema}
+                        />
+
+                        <ClinicalSummaryReport assessment={assessment} />
+                      </>
+                    ) : (
+                      <div className="h-72 rounded-2xl glass-panel-elevated flex flex-col items-center justify-center p-8 text-center space-y-3">
+                        <div className="w-10 h-10 rounded-full border-2 border-cyan-400 border-t-transparent animate-spin" />
+                        <span className="text-sm font-semibold text-cyan-300 font-mono">
+                          Synthesizing 8 Multi-Task Predictions...
+                        </span>
+                        <span className="text-xs text-slate-400">
+                          Aligning high-res crop textures with PubMedBERT semantic prototypes
+                        </span>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+        )}
+
+        {/* Tab 2: What Happened & Autonomous Research Audit */}
+        {activeTab === 'audit' && <WhatHappenedSection />}
+
+        {/* Tab 3: End-to-End Pipeline Telemetry */}
+        {activeTab === 'telemetry' && <PipelineTelemetry />}
+
+        {/* Tab 4: Curated Clinical Case Library */}
+        {activeTab === 'cases' && (
+          <CaseLibrary onSelectCase={handleSelectCaseFromLibrary} />
+        )}
+      </main>
+
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
